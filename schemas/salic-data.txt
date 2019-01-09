@@ -1,0 +1,15 @@
+
+
+docker cp ./Agentes.BAK salic-mssql:/tmp/agentes.bak
+
+docker exec -it salic-mssql /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'salic123456' -Q 'RESTORE FILELISTONLY FROM DISK = "/var/opt/mssql/backup/salic-data/Agentes.BAK"' | tr -s ' ' | cut -d ' ' -f 1-2
+
+=======================
+LogicalName   PhysicalName
+------------------------------------------
+Agentes_Est M:\MSSQL11.MSSQLSERVERMSSQL\MSSQL\DATA\Agentes_Est.mdf
+Agentes_Est_log L:\MSSQL11.MSSQLSERVER\MSSQL\LOG\Agentes_Est_log.ldf
+
+docker exec -it salic-mssql /opt/mssql-tools/bin/sqlcmd \
+   -S localhost -U SA -P 'salic123456' \
+   -Q 'RESTORE DATABASE Agentes FROM DISK = "/tmp/agentes.bak" WITH MOVE "Agentes_Est" TO "/var/opt/mssql/data/Agentes_Est.mdf", MOVE "Agentes_Est_log" TO "/var/opt/mssql/data/Agentes_Est_log.ldf"' 
