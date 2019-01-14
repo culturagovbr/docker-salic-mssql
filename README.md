@@ -9,6 +9,12 @@ docker-compose run --rm --service-ports salic-mssql
 ## Linux
 Ajustar o docke-compose.yml para linux
 
+Fazer o build para gerar as tabelas
+```
+docker-compose up --build
+```
+
+Sem gerar tabelas
 ```
 docker-compose up
 ```
