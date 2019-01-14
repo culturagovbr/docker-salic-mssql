@@ -3,11 +3,11 @@ version: '3.0'
 services:
   salic-mssql:
     build: .
-    image: clebersantos/mcr.microsoft.com/mssql/server:latest
+    image: mcr.microsoft.com/mssql/server:latest
     container_name: salic-mssql
     volumes: 
-      - docker-data:/var/opt/mssql # for mac
-      # - ./docker-data:/var/opt/mssql # for linux
+      # - docker-data:/var/opt/mssql # for mac
+      - ./docker-data:/var/opt/mssql # for linux
       # - ./schemas:/tmp/schemas
       # - ./initial-data.sql:/tmp/initial-data.sql 
     # working_dir: /tmp
@@ -18,5 +18,5 @@ services:
       ACCEPT_EULA: "Y"
       SA_PASSWORD: "salic@123456"     
  
-volumes: # for mac
-  docker-data: 
+# volumes: # for mac
+  # docker-data: 

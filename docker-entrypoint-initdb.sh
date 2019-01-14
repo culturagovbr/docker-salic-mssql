@@ -26,20 +26,6 @@ do
   echo importando $entry
   shortname=$(echo $entry | cut -f 1 -d '.' | cut -f 2 -d '/')
   echo executing $shortname
-  /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/'$shortname'"' | tr -s ' ' | cut -d ' ' -f 1-2
+  /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/'$shortname'.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE '$shortname' FROM DISK = "/tmp/schemas/'$shortname'.bak" WITH MOVE "'$shortname'_Est" TO "/var/opt/mssql/data/'$shortname'_Est.mdf", MOVE "'$shortname'_Est_log" TO "/var/opt/mssql/data/'$shortname'_Est_log.ldf"'
 done
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/agentes.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE Agentes FROM DISK = "/tmp/schemas/agentes.bak" WITH MOVE "Agentes_Est" TO "/var/opt/mssql/data/Agentes_Est.mdf", MOVE "Agentes_Est_log" TO "/var/opt/mssql/data/Agentes_Est_log.ldf"'
-
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/BDCORPORATIVO.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE Agentes FROM DISK = "/tmp/schemas/agentes.bak" WITH MOVE "Agentes_Est" TO "/var/opt/mssql/data/Agentes_Est.mdf", MOVE "Agentes_Est_log" TO "/var/opt/mssql/data/Agentes_Est_log.ldf"'
-
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/ControleDeAcesso.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE Agentes FROM DISK = "/tmp/schemas/agentes.bak" WITH MOVE "Agentes_Est" TO "/var/opt/mssql/data/Agentes_Est.mdf", MOVE "Agentes_Est_log" TO "/var/opt/mssql/data/Agentes_Est_log.ldf"'
-
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/SAC.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE Agentes FROM DISK = "/tmp/schemas/agentes.bak" WITH MOVE "Agentes_Est" TO "/var/opt/mssql/data/Agentes_Est.mdf", MOVE "Agentes_Est_log" TO "/var/opt/mssql/data/Agentes_Est_log.ldf"'
-
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/TABELAS.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
-# sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE Agentes FROM DISK = "/tmp/schemas/agentes.bak" WITH MOVE "Agentes_Est" TO "/var/opt/mssql/data/Agentes_Est.mdf", MOVE "Agentes_Est_log" TO "/var/opt/mssql/data/Agentes_Est_log.ldf"'
