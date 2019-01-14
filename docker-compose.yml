@@ -2,13 +2,16 @@ version: '3.0'
 
 services:
   salic-mssql:
-    image: mcr.microsoft.com/mssql/server:latest
+    build: .
+    image: clebersantos/mcr.microsoft.com/mssql/server:latest
     container_name: salic-mssql
     volumes: 
       - docker-data:/var/opt/mssql # for mac
       # - ./docker-data:/var/opt/mssql # for linux
-      - ./schemas:/tmp/schemas
-      - ./initial-data.sql:/tmp/initial-data.sql  
+      # - ./schemas:/tmp/schemas
+      # - ./initial-data.sql:/tmp/initial-data.sql 
+    # working_dir: /tmp
+    # command: sh -c ' chmod +x ./entrypoint.sh; ./entrypoint.sh & /opt/mssql/bin/sqlservr;' 
     ports:
       - "1433:1433"
     environment:
