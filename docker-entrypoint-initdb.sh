@@ -29,3 +29,10 @@ do
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/'$shortname'.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE '$shortname' FROM DISK = "/tmp/schemas/'$shortname'.bak" WITH MOVE "'$shortname'_Est" TO "/var/opt/mssql/data/'$shortname'_Est.mdf", MOVE "'$shortname'_Est_log" TO "/var/opt/mssql/data/'$shortname'_Est_log.ldf"'
 done
+
+echo "$0: Installing python odbc library in order to import data"
+apt install python3-pip
+pip3 install --upgrade pip
+apt install unixodbc-dev
+pip install pyodbc
+pip install sqlalchemy

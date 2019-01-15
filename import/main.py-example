@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import importdata
+
+db_source = {
+    "host": "localhost",
+    "user": "user",
+    "pass": "pass",
+    "port": "1433",
+    "database": "db",
+}
+
+db_target = {
+    "host": "localhost",
+    "user": "user2",
+    "pass": "pass",
+    "port": "1434",
+    "database": "db",
+}
+
+
+import_data = ImportData(db_source, db_target)
+
+import_folder = './import/data'
+import_data.prepare_queries(import_folder)
+
