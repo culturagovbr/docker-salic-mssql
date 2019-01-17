@@ -31,8 +31,3 @@ do
 done
 
 echo "$0: Installing python odbc library in order to import data"
-apt install python3-pip
-pip3 install --upgrade pip
-apt install unixodbc-dev
-pip install pyodbc
-pip install sqlalchemy

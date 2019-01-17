@@ -1,0 +1,5 @@
+preprojeto|INNER JOIN sac.dbo.projetos p ON preprojeto.idpreprojeto = p.idprojeto AND p.anoprojeto='18'
+projetos|AnoProjeto='18'
+aprovacao|INNER JOIN sac.dbo.projetos p ON aprovacao = p.idpronac AND p.anoprojeto = '18'
+tbplanilhaproposta|INNER JOIN sac.dbo.projetos p ON tbplanilhaproposta.idprojeto = p.idprojeto AND p.anoprojeto = '18'
+tbplanilhaaprovacao|INNER JOIN sac.dbo.projetos p ON tbplanilhaaprovacao = p.idpronac AND p.anoprojeto = '18'

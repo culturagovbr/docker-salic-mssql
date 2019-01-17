@@ -1,9 +1,0 @@
-projetos|AnoProjeto='18'
-mecanismo|
-projeto|
-preprojeto|
-verificacao|
-bancoagencia|
-tipo|
-tbplanilhaitens|
-tbplanilhaaprovacao|INNER JOIN sac.dbo.projetos p ON tbplanilhaaprovacao = p.idpronac AND p.anoprojeto = '18'
