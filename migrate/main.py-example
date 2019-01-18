@@ -18,8 +18,7 @@ db_target = {
 }
 
 
-import_data = ImportData(db_source, db_target)
+migrate_data = MigrateData(db_source, db_target)
 
-import_folder = './import/data'
-import_data.prepare_queries(import_folder)
-
+migrate_folder = '/tmp/migrate/tables'
+migrate_data.migrate(migrate_folder)

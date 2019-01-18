@@ -3,6 +3,7 @@
 # Migrador de dados MSSQL Server
 #
 
+import math
 from os import listdir, path
 from sqlalchemy import create_engine, select, MetaData, Table
 from sqlalchemy.sql import text
@@ -129,17 +130,19 @@ class MigrateData:
         table_target = Table(params.get('table'), metadata_target, autoload=True, autoload_with=self.engine_target, schema=params.get('schema'))
 
         insert_data = table_target.insert().from_select=self.s_source.query(table_source).all()
-        result_qtd = self.s_source.query(table_source).count()
-
+        
+        # chain size for inserting # 100 per insert
+        insert_chain_size = 100
         
         try:
-            self.connection.execute(table_target.insert(insert_data))
-            
+            for i in range(len(insert_data))[::insert_chain_size]:
+                y = i + insert_chain_size - 1
+                chunk_data = insert_data[i:y]
+                self.connection.execute(table_target.insert(chunk_data))
+                
             print('Tabela %s.%s.%s importada com sucesso.' % (params.get('dbname'), params.get('schema'), params.get('table')))
-        except (RuntimeError, TypeError, NameError):
-            print('################')
-            print('Erro: %s' % (RuntimeError))
-            print(TypeError)
-            print(NameError)
-            self.s_session.rollback()
+            
+        except Error:
+            print(Error)
+            self.s_target.rollback()
             return False

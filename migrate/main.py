@@ -22,6 +22,6 @@ db_target = {
 
 migrate_data = MigrateData(db_source, db_target)
 
-migrate_folder = '/tmp/migrate/initial'
+migrate_folder = '/tmp/migrate/tables'
 migrate_data.migrate(migrate_folder)
 
