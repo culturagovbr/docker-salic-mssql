@@ -4,6 +4,7 @@
 #
 
 import math
+import sys
 from os import listdir, path
 from sqlalchemy import create_engine, select, MetaData, Table
 from sqlalchemy.sql import text
@@ -73,6 +74,12 @@ class MigrateData:
         
         for database in databases:
             dbname, schema, extension = database.split('.')
+            print(" ")
+           
+            print("------------------------------------ ")
+            print("Banco/Schema:  %s.%s " % (dbname, schema))
+            print("------------------------------------ ")            
+
             if dbname != self.db_source.get('dbname') or schema != self.db_source.get('schema'):
                 self.db_source.__setitem__('dbname', dbname)
                 self.db_target.__setitem__('dbname', dbname)
@@ -121,18 +128,22 @@ class MigrateData:
         except sqlalchemyException.NoSuchTableError:
             self.error()
         
-        if params.get('conditions') == None:
-            data_source = self.s_source.query(table_source.select())
+        if params.get('condition') == None:
+            data_source = self.s_source.query(table_source).all()
         else:
-            data_source = self.s_source.query(table_source.select()).filter(text(params.get('conditions')))
-    
+            #data_source = self.s_source.query(table_source).join()
+            #data_source = data_source.filter(text(params.get('condition')))
+            data_source = data_source.all()
+            
+        
         metadata_target = MetaData(self.engine_target)
         table_target = Table(params.get('table'), metadata_target, autoload=True, autoload_with=self.engine_target, schema=params.get('schema'))
-
-        insert_data = table_target.insert().from_select=self.s_source.query(table_source).all()
+        
+        insert_data = table_target.insert().from_select=data_source
         
         # chain size for inserting # 100 per insert
         insert_chain_size = 100
+        print(' %s.%s.%s' % (params.get('dbname'), params.get('schema'), params.get('table')), end = "")
         
         try:
             for i in range(len(insert_data))[::insert_chain_size]:
@@ -140,9 +151,12 @@ class MigrateData:
                 chunk_data = insert_data[i:y]
                 self.connection.execute(table_target.insert(chunk_data))
                 
-            print('Tabela %s.%s.%s importada com sucesso.' % (params.get('dbname'), params.get('schema'), params.get('table')))
+                print(".", end = "")
+                sys.stdout.flush()
+                
+            print("OK (%s itens)" % len(insert_data))
             
-        except Error:
-            print(Error)
+        except NameError:
+            print(NameError)
             self.s_target.rollback()
             return False
