@@ -1,3 +1,4 @@
+interessado|INNER JOIN sac.dbo.projetos p ON interessado.cgccpf = p.cgccpf AND p.anoprojeto='18'
 preprojeto|INNER JOIN sac.dbo.projetos p ON preprojeto.idpreprojeto = p.idprojeto AND p.anoprojeto='18'
 projetos|AnoProjeto='18'
 aprovacao|INNER JOIN sac.dbo.projetos p ON aprovacao = p.idpronac AND p.anoprojeto = '18'
