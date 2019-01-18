@@ -100,7 +100,7 @@ class MigrateData:
                     
                     print("Arquivo não encontrado")
                     
-        self_s_source.commit()
+        self.s_source.commit()
         self.s_target.commit()
         
         self.s_source.close()
