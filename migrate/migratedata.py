@@ -105,7 +105,7 @@ class MigrateData:
                 except IOError:
                     self.error()
                     
-                    print("Arquivo não encontrado")
+                    print("Arquivo nao encontrado")
                     
         self.s_source.commit()
         self.s_target.commit()
@@ -128,13 +128,22 @@ class MigrateData:
         except sqlalchemyException.NoSuchTableError:
             self.error()
         
-        if params.get('condition') == None:
+        if params.get('condition') == None or params.get('condition') == '':
             data_source = self.s_source.query(table_source).all()
         else:
-            #data_source = self.s_source.query(table_source).join()
-            #data_source = data_source.filter(text(params.get('condition')))
-            data_source = data_source.all()
+            table_cols = tuple(params.get('table') + '.' + col.name for col in table_source.columns)
+            if params.get('condition').find('JOIN') > 0:
+                sql = "SELECT DISTINCT " + ",".join(table_cols) + " FROM " + params.get('dbname') + "." + params.get('schema') + "." + params.get('table') + " AS " + params.get('table') + " "  + params.get('condition') + " GROUP BY " + ",".join(table_cols)
+            else:
+                sql = "SELECT " + ",".join(table_cols) + " FROM " + params.get('dbname') + "." + params.get('schema') + "." + params.get('table') + " AS " + params.get('table') + " "  + params.get('condition')
             
+            result_source = self.s_source.execute(sql).fetchall()
+
+            resultset = []
+            for row in result_source:
+                resultset.append(dict(row))
+
+            data_source=resultset
         
         metadata_target = MetaData(self.engine_target)
         table_target = Table(params.get('table'), metadata_target, autoload=True, autoload_with=self.engine_target, schema=params.get('schema'))
@@ -142,7 +151,7 @@ class MigrateData:
         insert_data = table_target.insert().from_select=data_source
         
         # chain size for inserting # 100 per insert
-        insert_chain_size = 100
+        insert_chain_size = 10
         print(' %s.%s.%s' % (params.get('dbname'), params.get('schema'), params.get('table')), end = "")
         
         try:
