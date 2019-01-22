@@ -10,6 +10,7 @@ from sqlalchemy import create_engine, select, MetaData, Table
 from sqlalchemy.sql import text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import exc as sqlalchemyException
+from sqlalchemy.engine.reflection import Inspector
 
 class MigrateData:
 
@@ -35,20 +36,20 @@ class MigrateData:
         
         self.dsn_source = ('%s://%s:%s@%s:%s/%s?driver=%s') % (
             alchemy_driver,
-            self.db_source.get('user'),
-            self.db_source.get('pass'),
-            self.db_source.get('host'),
-            self.db_source.get('port'),
-            self.db_source.get('dbname'),
+            self.db_source['user'],
+            self.db_source['pass'],
+            self.db_source['host'],
+            self.db_source['port'],
+            self.db_source['dbname'],
             odbc_driver,
         )
         self.dsn_target = ('%s://%s:%s@%s:%s/%s?driver=%s') % (
             alchemy_driver,
-            self.db_target.get('user'),
-            self.db_target.get('pass'),
-            self.db_target.get('host'),
-            self.db_target.get('port'),
-            self.db_target.get('dbname'),
+            self.db_target['user'],
+            self.db_target['pass'],
+            self.db_target['host'],
+            self.db_target['port'],
+            self.db_target['dbname'],
             odbc_driver,
         )
 
@@ -80,11 +81,11 @@ class MigrateData:
             print("Banco/Schema:  %s.%s " % (dbname, schema))
             print("------------------------------------ ")            
 
-            if dbname != self.db_source.get('dbname') or schema != self.db_source.get('schema'):
-                self.db_source.__setitem__('dbname', dbname)
-                self.db_target.__setitem__('dbname', dbname)
-                self.db_source.__setitem__('schema', schema)
-                self.db_target.__setitem__('schema', schema)
+            if dbname != self.db_source['dbname'] or schema != self.db_source['schema']:
+                self.db_source['dbname'] = dbname
+                self.db_target['dbname'] = dbname
+                self.db_source['schema'] = schema
+                self.db_target['schema'] = schema
                 
                 self.configure()
                 
@@ -124,18 +125,21 @@ class MigrateData:
         self.s_target = self.Session_target()
 
         try:        
-            table_source = Table(params.get('table'), metadata_source, autoload=True, autoload_with=self.engine_source, schema=params.get('schema'))
+            table_source = Table(params['table'], metadata_source, autoload=True, autoload_with=self.engine_source, schema=params['schema'])
         except sqlalchemyException.NoSuchTableError:
             self.error()
         
-        if params.get('condition') == None or params.get('condition') == '':
+        if params['condition'] == None or params['condition'] == '':
             data_source = self.s_source.query(table_source).all()
         else:
-            table_cols = tuple(params.get('table') + '.' + col.name for col in table_source.columns)
-            if params.get('condition').find('JOIN') > 0:
-                sql = "SELECT DISTINCT " + ",".join(table_cols) + " FROM " + params.get('dbname') + "." + params.get('schema') + "." + params.get('table') + " AS " + params.get('table') + " "  + params.get('condition') + " GROUP BY " + ",".join(table_cols)
+            table_cols = tuple(params['table'] + '.' + col.name for col in table_source.columns)
+            if params['condition'].find('JOIN') > 0:
+                inspect_table = Inspector.from_engine(self.engine_source)
+                pk_field = inspect_table.get_pk_constraint(params['table'], params['schema'])['constrained_columns'][0]
+                sql_subquery = "SELECT DISTINCT " + params['table'] + "." + pk_field + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " " + params['condition'] + " GROUP BY " + params['table'] + "." + pk_field
+                sql = "SELECT " + ",".join(table_cols) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " WHERE " + params['table'] + "." +  pk_field + " IN (" + sql_subquery + ")"
             else:
-                sql = "SELECT " + ",".join(table_cols) + " FROM " + params.get('dbname') + "." + params.get('schema') + "." + params.get('table') + " AS " + params.get('table') + " "  + params.get('condition')
+                sql = "SELECT " + ",".join(table_cols) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " "  + params['condition']
             
             result_source = self.s_source.execute(sql).fetchall()
 
@@ -146,17 +150,17 @@ class MigrateData:
             data_source=resultset
         
         metadata_target = MetaData(self.engine_target)
-        table_target = Table(params.get('table'), metadata_target, autoload=True, autoload_with=self.engine_target, schema=params.get('schema'))
+        table_target = Table(params['table'], metadata_target, autoload=True, autoload_with=self.engine_target, schema=params['schema'])
         
         insert_data = table_target.insert().from_select=data_source
         
         # chain size for inserting # 100 per insert
         insert_chain_size = 10
-        print(' %s.%s.%s' % (params.get('dbname'), params.get('schema'), params.get('table')), end = "")
+        print(' %s.%s.%s' % (params['dbname'], params['schema'], params['table']), end = "")
         
         try:
             for i in range(len(insert_data))[::insert_chain_size]:
-                y = i + insert_chain_size - 1
+                y = i + insert_chain_size
                 chunk_data = insert_data[i:y]
                 self.connection.execute(table_target.insert(chunk_data))
                 

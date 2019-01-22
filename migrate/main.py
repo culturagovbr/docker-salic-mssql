@@ -14,6 +14,7 @@ db_source = {
     "pass": "salic",
     "port": "1434",
     "dbname": "sac",
+    "schema": "dbo",
 }
 
 db_target = {
@@ -22,6 +23,7 @@ db_target = {
     "pass": "salic@123456",
     "port": "1433",
     "dbname": "sac",
+    "schema": "dbo",
 }
 
 ## Configure até aqui
@@ -45,11 +47,11 @@ if len(sys.argv) > 1:
         migrate_data.migrate(migrate_folder)
         
     else:
-        print('Migração informada não existe! Escolha uma das abaixo:')
+        print('Migracao informada nao existe! Escolha uma das abaixo:')
         display_available(available_migrations)
         exit()
 
 else:
-    print("Escolha dentre os conjuntos de tabelas abaixo qual você deseja importar:")
+    print("Escolha dentre os conjuntos de tabelas abaixo qual voce deseja importar:")
     display_available(available_migrations)    
     exit()
