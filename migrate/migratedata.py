@@ -176,7 +176,7 @@ class MigrateData:
         
         try:
             for i in range(len(insert_data))[::self.configurations['insert_chain_size']]:
-                y = i + insert_chain_size
+                y = i + self.configurations['insert_chain_size']
                 chunk_data = insert_data[i:y]
                 self.connection.execute(table_target.insert(chunk_data))
                 
