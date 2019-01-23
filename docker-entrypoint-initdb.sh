@@ -30,4 +30,6 @@ do
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE '$shortname' FROM DISK = "/tmp/schemas/'$shortname'.bak" WITH MOVE "'$shortname'_Est" TO "/var/opt/mssql/data/'$shortname'_Est.mdf", MOVE "'$shortname'_Est_log" TO "/var/opt/mssql/data/'$shortname'_Est_log.ldf"'
 done
 
-echo "$0: Installing python odbc library in order to import data"
+echo "$0: Loads initial data..."
+cd /tmp/migrate
+./main.py 0-initial
