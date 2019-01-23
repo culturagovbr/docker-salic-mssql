@@ -1,6 +1,12 @@
 interessado|INNER JOIN sac.dbo.projetos p ON interessado.cgccpf = p.cgccpf AND p.anoprojeto='18'
 preprojeto|INNER JOIN sac.dbo.projetos p ON preprojeto.idpreprojeto = p.idprojeto AND p.anoprojeto='18'
-projetos|AnoProjeto='18'
-aprovacao|INNER JOIN sac.dbo.projetos p ON aprovacao = p.idpronac AND p.anoprojeto = '18'
+projetos|INNER JOIN sac.dbo.interessado i ON i.cgccpf = projetos.cgccpf AND projetos.AnoProjeto='18'
+tbreadequacao|INNER JOIN sac.dbo.projetos projetos ON projetos.idpronac = tbreadequacao.idpronac AND projetos.AnoProjeto='18'
+prorrogacao|WHERE anoprojeto = '18'
+aprovacao|INNER JOIN sac.dbo.projetos p ON aprovacao.idpronac = p.idpronac AND p.anoprojeto = '18'
 tbplanilhaproposta|INNER JOIN sac.dbo.projetos p ON tbplanilhaproposta.idprojeto = p.idprojeto AND p.anoprojeto = '18'
 tbplanilhaaprovacao|INNER JOIN sac.dbo.projetos p ON tbplanilhaaprovacao = p.idpronac AND p.anoprojeto = '18'
+tbdistribuirreadequacao| INNER JOIN sac.dbo.tbReadequacao on tbDistribuirReadequacao.idreadequacao = tbreadequacao.idreadequacao INNER JOIN sac.dbo.projetos projetos on projetos.IdPRONAC = tbreadequacao.idpronac and projetos.anoprojeto = '18'
+tbplanodistribuicao|inner join sac.dbo.tbReadequacao on tbplanodistribuicao.idreadequacao = tbreadequacao.idreadequacao inner join sac.dbo.projetos projetos on projetos.IdPRONAC = tbreadequacao.idpronac and projetos.anoprojeto = '18'
+tbsolicitacaotransferenciarecursos|
+tbprojetorecebedorrecurso|
