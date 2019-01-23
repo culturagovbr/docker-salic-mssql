@@ -3,3 +3,5 @@ docker-data/
 *~
 *#
 .#*
+*.pyc
+migrate/__pycache__
