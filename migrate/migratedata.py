@@ -23,12 +23,17 @@ class MigrateData:
     s_source = {}
     s_target = {}
     conn = {}
-
-    def __init__(self, db_source, db_target):
-        self.db_source = db_source
-        self.db_target = db_target
+    configurations = {}
+    
+    def __init__(self, db_config, configurations):
+        if not all(k in db_config.keys() for k in ('db_source', 'db_target')):
+            print("Defina db_source e db_target no arquivo main.py!")
+            exit()
         
-        self.configure()
+        self.db_source = db_config['db_source']
+        self.db_target = db_config['db_target']
+        
+        self.configure(configurations)
     
     def set_dsn(self):
         alchemy_driver = 'mssql+pyodbc'
@@ -53,7 +58,7 @@ class MigrateData:
             odbc_driver,
         )
 
-    def configure(self):
+    def configure(self, configurations = False):
         self.set_dsn()
         
         self.engine_source = create_engine(self.dsn_source)
@@ -63,6 +68,9 @@ class MigrateData:
         self.Session_target = sessionmaker(bind=self.engine_target)
 
         self.connection = self.engine_target.connect()
+
+        if configurations != False:
+            self.configurations = configurations
 
     
     def error(self):
@@ -140,9 +148,19 @@ class MigrateData:
                 sql = "SELECT " + ",".join(table_cols) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " WHERE " + params['table'] + "." +  pk_field + " IN (" + sql_subquery + ")"
             else:
                 sql = "SELECT " + ",".join(table_cols) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " "  + params['condition']
-            
-            result_source = self.s_source.execute(sql).fetchall()
 
+            try:
+                result_source = self.s_source.execute(sql).fetchall()
+            except sqlalchemyException.IntegrityError as error:
+                if (self.configurations['bypass_constrains'] == True):
+                    print('Erro de constraint.')
+                    pass
+                else:
+                    print('Erro de constraint:')
+                    print(error.message)
+                    self.s_target.rollback()
+                    exit()                    
+                
             resultset = []
             for row in result_source:
                 resultset.append(dict(row))
@@ -154,12 +172,10 @@ class MigrateData:
         
         insert_data = table_target.insert().from_select=data_source
         
-        # chain size for inserting # 100 per insert
-        insert_chain_size = 10
         print(' %s.%s.%s' % (params['dbname'], params['schema'], params['table']), end = "")
         
         try:
-            for i in range(len(insert_data))[::insert_chain_size]:
+            for i in range(len(insert_data))[::self.configurations['insert_chain_size']]:
                 y = i + insert_chain_size
                 chunk_data = insert_data[i:y]
                 self.connection.execute(table_target.insert(chunk_data))
