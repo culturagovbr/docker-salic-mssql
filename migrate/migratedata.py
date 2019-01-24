@@ -11,6 +11,7 @@ from sqlalchemy import create_engine, select, MetaData, Table
 from sqlalchemy.sql import text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import exc as sqlalchemyException
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.engine.reflection import Inspector
 
 class MigrateData:
@@ -26,6 +27,7 @@ class MigrateData:
     conn = {}
     configurations = {}
     actions = ('migrate', 'flush')
+    errors = []
     
     def __init__(self, db_config, configurations):
         if not all(k in db_config.keys() for k in ('db_source', 'db_target')):
@@ -75,10 +77,11 @@ class MigrateData:
             self.configurations = configurations
 
     
-    def error(self):
-        self.s_source.rollback()
-        self.s_target.rollback()
-    
+    def rollback(self):
+        if any(self.s_source):
+            self.s_source.rollback()
+        if any(self.s_target):
+            self.s_target.rollback()
 
     def flush(self, import_folder):
         print("Apagando dados...")
@@ -146,10 +149,13 @@ class MigrateData:
                         elif action == 'migrate':
                             self.migrate_data(params)
                 except IOError:
-                    self.error()
+                    self.rollback()
                     
                     print("Arquivo nao encontrado")
-                    
+
+        if any(self.errors):
+            print("Atencao: %s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
+        
         self.close_connections()
 
         return True
@@ -184,8 +190,8 @@ class MigrateData:
         try:
             table_source = Table(params['table'], metadata_source, autoload=True, autoload_with=self.engine_source, schema=params['schema'])
         except sqlalchemyException.NoSuchTableError:
-            self.error()
-        
+            self.rollback()
+            
         if params['condition'] == None or params['condition'] == '':
             data_source = self.s_source.query(table_source).all()
         else:
@@ -200,21 +206,16 @@ class MigrateData:
 
             try:
                 result_source = self.s_source.execute(sql).fetchall()
-            except sqlalchemyException.IntegrityError as error:
-                if (self.configurations['bypass_constrains'] == True):
-                    print('Erro de constraint.')
-                    pass
-                else:
-                    print('Erro de constraint:')
-                    print(error.message)
-                    self.s_target.rollback()
-                    exit()                    
-                
+            except:
+                print(sys.exc_info())
+                self.errors.append(e)
+                exit()
+            
             resultset = []
             for row in result_source:
                 resultset.append(dict(row))
 
-            data_source=resultset
+            data_source = resultset
         
         metadata_target = MetaData(self.engine_target)
         table_target = Table(params['table'], metadata_target, autoload=True, autoload_with=self.engine_target, schema=params['schema'])
@@ -223,18 +224,25 @@ class MigrateData:
         
         print(' %s.%s.%s' % (params['dbname'], params['schema'], params['table']), end = "")
         
-        try:
-            for i in range(len(insert_data))[::self.configurations['insert_chain_size']]:
-                y = i + self.configurations['insert_chain_size']
-                chunk_data = insert_data[i:y]
+        for i in range(len(insert_data))[::self.configurations['insert_chain_size']]:
+            y = i + self.configurations['insert_chain_size']
+            chunk_data = insert_data[i:y]
+
+            try:
                 self.connection.execute(table_target.insert(chunk_data))
-                
                 print(".", end = "")
                 sys.stdout.flush()
-                
-            print("OK (%s itens)" % len(insert_data))
             
-        except NameError:
-            print(NameError)
-            self.s_target.rollback()
-            return False
+            except IntegrityError as e:
+                if (self.configurations['bypass_constrains'] == True):
+                    print('\033[31m' + '(x)' + '\033[0m', end = "")
+                    self.errors.append(e)
+                    sys.stdout.flush()
+                    pass
+                else:
+                    print('Erro de constraint:')
+                    print(e)
+                    self.rollback()
+                    break
+            
+        print("OK (%s itens)" % len(insert_data))
