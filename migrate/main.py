@@ -48,7 +48,7 @@ dP  dP  dP dP `8888P88 dP       `88888P8          `88888P' `88888P8 dP dP `88888
 def migrate(folder = None):
     if get_available_migrations().__contains__(folder) == True:
         migrate_data = MigrateData(db_config, configurations)
-        migrate_folder = os.path.join(tables_folder, folder)
+        migrate_folder = os.path.join(configurations['tables_folder'], folder)
         migrate_data.migrate(migrate_folder)
         
     else:
