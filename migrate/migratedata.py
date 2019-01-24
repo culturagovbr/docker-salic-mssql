@@ -6,6 +6,7 @@
 import math
 import sys
 from os import listdir, path
+import re
 from sqlalchemy import create_engine, select, MetaData, Table
 from sqlalchemy.sql import text
 from sqlalchemy.orm import sessionmaker
@@ -24,6 +25,7 @@ class MigrateData:
     s_target = {}
     conn = {}
     configurations = {}
+    actions = ('migrate', 'flush')
     
     def __init__(self, db_config, configurations):
         if not all(k in db_config.keys() for k in ('db_source', 'db_target')):
@@ -77,12 +79,38 @@ class MigrateData:
         self.s_source.rollback()
         self.s_target.rollback()
     
-        
+
+    def flush(self, import_folder):
+        print("Apagando dados...")
+        self.execute(import_folder, 'flush', True)
+    
     def migrate(self, import_folder):
+        print("Importando dados...")
+        self.execute(import_folder, 'migrate')
+        
+    def execute(self, import_folder, action, reverse = False):
+
+        if action not in self.actions:
+            print("Erro: tentando executar acao desconhecida!")
+            exit()
+        
         databases = [f for f in listdir(import_folder) if f.lower().endswith(('.tbl'))]
+        databases.sort()
+        if reverse == True:
+            databases.reverse()
+        
+        file_pattern = re.compile("^[0-9]{1,2}\-(.*)\.(.*)\.tbl$")
         
         for database in databases:
-            dbname, schema, extension = database.split('.')
+            matches = file_pattern.match(database)
+            if matches == None: 
+                print("Arquivo de tabela fora do padrao [00]-[nometabela].[schema].tbl. O numeral refere-se a ordem de execucao.")
+                print("Exemplos:")
+                print("00-agentesc.dbo.tbl")
+                print("01-sac.dbo.tbl")
+                exit()
+
+            dbname, schema = matches.groups()
             print(" ")
            
             print("------------------------------------ ")
@@ -101,6 +129,9 @@ class MigrateData:
             with open(filename) as f:
                 try:
                     lines = f.readlines()
+                    if reverse == True:
+                        lines.reverse()
+                        
                     for line in lines:
                         table, condition = line.rstrip().split('|')
                         params = {
@@ -110,29 +141,47 @@ class MigrateData:
                             'condition': condition,
                         }
                         
-                        self.copy_data(params)
+                        if action == 'flush':
+                            self.flush_data(params)
+                        elif action == 'migrate':
+                            self.migrate_data(params)
                 except IOError:
                     self.error()
                     
                     print("Arquivo nao encontrado")
                     
-        self.s_source.commit()
-        self.s_target.commit()
-        
-        self.s_source.close()
-        self.s_target.close()
+        self.close_connections()
 
-        self.connection.close()
-        
         return True
 
-    def copy_data(self, params):
+    def close_connections(self):
+        if any(self.s_source):
+            self.s_source.commit()
+            self.s_source.close()
+        if any(self.s_source):
+            self.s_target.commit()
+            self.s_target.close()
+
+        self.connection.close()
+
+        return True
+
+    def flush_data(self, params):
+        metadata = MetaData(self.engine_target)
+        table = Table(params['table'], metadata, autoload=True, autoload_with=self.engine_source, schema=params['schema'])
+        self.s_target = self.Session_target()
+
+        self.engine_target.execute(table.delete())
+        print(' %s.%s.%s ... OK' % (params['dbname'], params['schema'], params['table']))
+        sys.stdout.flush()        
+    
+    def migrate_data(self, params):
         
         metadata_source = MetaData(self.engine_source)
         self.s_source = self.Session_source()
         self.s_target = self.Session_target()
 
-        try:        
+        try:
             table_source = Table(params['table'], metadata_source, autoload=True, autoload_with=self.engine_source, schema=params['schema'])
         except sqlalchemyException.NoSuchTableError:
             self.error()

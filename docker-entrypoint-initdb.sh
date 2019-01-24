@@ -32,4 +32,4 @@ done
 
 echo "$0: Loads initial data..."
 cd /tmp/migrate
-./main.py 0-initial
+./main.py migrate 0-initial
