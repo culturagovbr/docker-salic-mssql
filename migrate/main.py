@@ -1,51 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from migratedata import MigrateData
+from dbconfig import db_config
 import sys
 import os
-
-############################
-## Configure a partir daqui
-
-db_config = {
-    "db_source": {
-        "host": "10.0.0.205",
-        "user": "usuarios_internet",
-        "pass": "salic",
-        "port": "1434",
-        "dbname": "sac",
-        "schema": "dbo",
-    },
-    "db_target": {
-        "host": "localhost",
-        "user": "SA",
-        "pass": "salic@123456",
-        "port": "1433",
-        "dbname": "sac",
-        "schema": "dbo",
-    }
-}
 
 configurations = {
     'bypass_constrains': True,
     'insert_chain_size': 10,
+    'tables_folder': 'tables',
+    'actions': ('help', 'migrate', 'flush'),
 }
 
-## Configure até aqui
-##########################
+#############################
+### definicoes de metodos ###
+#############################
 
-tables_folder = 'tables'
-workdir = os.path.join(os.getcwd(), tables_folder)
-available_migrations = os.listdir(workdir)
+def get_available_migrations():
+    workdir = os.path.join(os.getcwd(), configurations['tables_folder'])
+    return os.listdir(workdir)
 
-def display_available(available):
+def display_available():
     print("\033[92m")
-    for m in available:
+    for m in get_available_migrations():
         print(' * %s' % m)
-    
-
     print('\033[0m')
-
 
 def help_menu():
     print(" ")
@@ -67,55 +46,57 @@ dP  dP  dP dP `8888P88 dP       `88888P8          `88888P' `88888P8 dP dP `88888
     print('\033[0m')
 
 def migrate(folder = None):
-    if available_migrations.__contains__(folder) == True:
+    if get_available_migrations().__contains__(folder) == True:
         migrate_data = MigrateData(db_config, configurations)
         migrate_folder = os.path.join(tables_folder, folder)
         migrate_data.migrate(migrate_folder)
         
     else:
         print('Escolha um conjunto valido de tabelas para migrar! Escolha uma das abaixo:')
-        display_available(available_migrations)
+        display_available()
         exit()
         
 def flush(folder):
-    if available_migrations.__contains__(folder) == True:
+    if get_available_migrations().__contains__(folder) == True:
         migrate_data = MigrateData(db_config, configurations)
-        migrate_folder = os.path.join(tables_folder, folder)
+        migrate_folder = os.path.join(configurations['tables_folder'], folder)
         migrate_data.flush(migrate_folder)
     else:
         print('Escolha um conjunto valido de tabelas para limpar! Escolha uma das abaixo:')
-        display_available(available_migrations)
+        display_available()
         exit()    
 
+def main():    
+    if len(sys.argv) > 1:
+        commands = ['command', 'action', 'folder']
+        args = dict(zip(commands, sys.argv))
     
-actions = ('help', 'migrate', 'flush')
-
-
-if len(sys.argv) > 1:
-    commands = ['command', 'action', 'folder']
-    args = dict(zip(commands, sys.argv))
+        action = args['action']
     
-    action = args['action']
-    
-    if 'folder' in args:
-        folder = args['folder']
-    else:
-        folder = None
-    
-    if action in actions:
-        if action == 'help':
-            show_header()
-            help_menu()
-        elif action == 'migrate':
-            migrate(folder)
-        elif action == 'flush':
-            flush(folder)
+        if 'folder' in args:
+            folder = args['folder']
         else:
-            help_menu()
-    
-    else:
-        print("Acao %s nao encontrada." % (action))
-        error_menu()
+            folder = None
         
-else:
-    help_menu()
+        if action in configurations['actions']:
+            if action == 'help':
+                show_header()
+                help_menu()
+            elif action == 'migrate':
+                migrate(folder)
+            elif action == 'flush':
+                flush(folder)
+            else:
+                help_menu()           
+        else:
+            print("Acao %s nao encontrada." % (action))
+            help_menu()
+    else:
+        help_menu()
+
+
+#############################
+###     inicializacao     ###
+#############################
+
+main()
