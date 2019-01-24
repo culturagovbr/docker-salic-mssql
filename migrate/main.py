@@ -21,7 +21,7 @@ def get_available_migrations():
     return os.listdir(workdir)
 
 def display_available():
-    print("\033[92m")
+    print("\033[1,92m")
     for m in get_available_migrations():
         print(' * %s' % m)
     print('\033[0m')

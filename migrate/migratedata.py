@@ -76,7 +76,17 @@ class MigrateData:
         if configurations != False:
             self.configurations = configurations
 
-    
+    def error_report(self):
+        print("")
+        print("ERRO")
+        print("%s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
+        print("")
+        for e in self.errors:
+            print(e.__context__)
+
+        print("")
+        print("%s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
+
     def rollback(self):
         if any(self.s_source):
             self.s_source.rollback()
@@ -96,18 +106,21 @@ class MigrateData:
         if action not in self.actions:
             print("Erro: tentando executar acao desconhecida!")
             exit()
-        
+
         databases = [f for f in listdir(import_folder) if f.lower().endswith(('.tbl'))]
         databases.sort()
         if reverse == True:
             databases.reverse()
+
+        print("Origem: %s" % (self.db_source['host']))
+        print("Destino: %s" % (self.db_target['host']))
         
         file_pattern = re.compile("^[0-9]{1,2}\-(.*)\.(.*)\.tbl$")
         
         for database in databases:
             matches = file_pattern.match(database)
             if matches == None: 
-                print("Arquivo de tabela fora do padrao [00]-[nometabela].[schema].tbl. O numeral refere-se a ordem de execucao.")
+                print("Arquivo de tabela (%s) fora do padrao [00]-[nometabela].[schema].tbl. O numeral refere-se a ordem de execucao." % (database))
                 print("Exemplos:")
                 print("00-agentesc.dbo.tbl")
                 print("01-sac.dbo.tbl")
@@ -154,7 +167,7 @@ class MigrateData:
                     print("Arquivo nao encontrado")
 
         if any(self.errors):
-            print("Atencao: %s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
+            self.error_report()
         
         self.close_connections()
 
@@ -235,7 +248,7 @@ class MigrateData:
             
             except IntegrityError as e:
                 if (self.configurations['bypass_constrains'] == True):
-                    print('\033[31m' + '(x)' + '\033[0m', end = "")
+                    print('\033[1,31m' + '(x)' + '\033[0m', end = "")
                     self.errors.append(e)
                     sys.stdout.flush()
                     pass
