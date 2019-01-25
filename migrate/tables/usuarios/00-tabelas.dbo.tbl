@@ -1,6 +1,9 @@
+tipos_pessoa|
 categorias_pessoa|
-pessoa|
+pessoas|INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'
+pessoas|INNER JOIN tabelas.dbo.orgaos on orgaos.org_pessoa = pessoas.pes_codigo
 orgaos|
+sistemas|
 grupos|
 usuarios|WHERE usu_identificacao = '23969156149'
-usuariosxorgaosxgrupos|inner join tabelas.dbo.usuarios usuarios on usuariosxorgaosxgrupos.uog_usuario = usuarios.usu_codigo and  usu_identificacao = '23969156149'
+usuariosxorgaosxgrupos|inner join tabelas.dbo.usuarios usuarios on usuariosxorgaosxgrupos.uog_usuario = usuarios.usu_codigo and  usuarios.usu_identificacao = '23969156149'
