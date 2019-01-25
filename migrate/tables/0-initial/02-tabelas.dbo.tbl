@@ -2,7 +2,8 @@ tipos_pessoa||
 categorias_pessoa||
 pessoas|INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'|
 pessoas|INNER JOIN tabelas.dbo.orgaos on orgaos.org_pessoa = pessoas.pes_codigo|
-pessoa_identificacoes|INNER JOIN tabelas.dbo.pessoas on pessoa_identificacoes.pid_pessoa = pessoas.pes_codigo INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'|pid_sequencia
+pessoa_identificacoes|INNER JOIN tabelas.dbo.orgaos on orgaos.org_pessoa = pessoa_identificacoes.pid_pessoa|pid_pessoa
+pessoa_identificacoes|INNER JOIN tabelas.dbo.pessoas on pessoa_identificacoes.pid_pessoa = pessoas.pes_codigo INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'|pid_pessoa
 orgaos||
 sistemas||
 grupos||
