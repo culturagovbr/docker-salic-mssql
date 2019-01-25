@@ -1,9 +1,10 @@
-tipos_pessoa|
-categorias_pessoa|
-pessoas|INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'
-pessoas|INNER JOIN tabelas.dbo.orgaos on orgaos.org_pessoa = pessoas.pes_codigo
-orgaos|
-sistemas|
-grupos|
-usuarios|WHERE usu_identificacao = '23969156149'
-usuariosxorgaosxgrupos|inner join tabelas.dbo.usuarios usuarios on usuariosxorgaosxgrupos.uog_usuario = usuarios.usu_codigo and  usuarios.usu_identificacao = '23969156149'
+tipos_pessoa||
+categorias_pessoa||
+pessoas|INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'|
+pessoas|INNER JOIN tabelas.dbo.orgaos on orgaos.org_pessoa = pessoas.pes_codigo|
+pessoa_identificacoes|INNER JOIN tabelas.dbo.pessoas on pessoa_identificacoes.pid_pessoa = pessoas.pes_codigo INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '23969156149'|pid_sequencia
+orgaos||
+sistemas||
+grupos||
+usuarios|WHERE usu_identificacao = '23969156149'|
+usuariosxorgaosxgrupos|inner join tabelas.dbo.usuarios usuarios on usuariosxorgaosxgrupos.uog_usuario = usuarios.usu_codigo and  usuarios.usu_identificacao = '23969156149'|

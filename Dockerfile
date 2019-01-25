@@ -28,3 +28,4 @@ RUN chmod +x /tmp/migrate/main.py
 WORKDIR "/tmp/"
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+WORKDIR "/tmp/migrate/"

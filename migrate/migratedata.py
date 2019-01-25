@@ -151,18 +151,20 @@ class MigrateData:
                         lines.reverse()
                         
                     for line in lines:
-                        table, condition = line.rstrip().split('|')
-                        params = {
-                            'dbname': dbname,
-                            'schema': schema,
-                            'table': table,
-                            'condition': condition,
-                        }
+                        if any(line):
+                            table, condition, primarykey = line.rstrip().split('|')
+                            params = {
+                                'dbname': dbname,
+                                'schema': schema,
+                                'table': table,
+                                'condition': condition,
+                                'primarykey': primarykey
+                            }
                         
-                        if action == 'flush':
-                            self.flush_data(params)
-                        elif action == 'migrate':
-                            self.migrate_data(params)
+                            if action == 'flush':
+                                self.flush_data(params)
+                            elif action == 'migrate':
+                                self.migrate_data(params)
                 except IOError:
                     self.rollback()
                     
@@ -220,7 +222,13 @@ class MigrateData:
         else:
             columns = self.get_accepted_columns(inspector, params, with_schema = True)
             if params['condition'].find('JOIN') > 0:
-                pk_field = inspector.get_pk_constraint(params['table'], params['schema'])['constrained_columns'][0]
+                if any(params['primarykey']):
+                    pk_field = params['primarykey']
+                else:
+                    pk_fields = inspector.get_pk_constraint(params['table'], params['schema'])['constrained_columns']
+                    if len(pk_fields) > 1:
+                        print("Atencao: multiplas chaves primarias encontadas: %s" % (pk_fields))
+                    pk_field = pk_fields[0]
                 sql_subquery = "SELECT DISTINCT " + params['table'] + "." + pk_field + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " " + params['condition'] + " GROUP BY " + params['table'] + "." + pk_field
                 sql = "SELECT " + ",".join(columns) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " WHERE " + params['table'] + "." +  pk_field + " IN (" + sql_subquery + ")"
             else:
