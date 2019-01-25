@@ -1,0 +1,6 @@
+categorias_pessoa|
+pessoa|
+orgaos|
+grupos|
+usuarios|WHERE usu_identificacao = '23969156149'
+usuariosxorgaosxgrupos|inner join tabelas.dbo.usuarios usuarios on usuariosxorgaosxgrupos.uog_usuario = usuarios.usu_codigo and  usu_identificacao = '23969156149'
