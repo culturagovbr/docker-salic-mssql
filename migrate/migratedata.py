@@ -78,13 +78,13 @@ class MigrateData:
 
     def error_report(self):
         print("")
-        print("ERRO")
-        print("%s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
+        print("#####  ERRO(S) #####")
+        print(" %s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
         print("")
         for e in self.errors:
-            print(e.__context__)
+            print("(%s) - %s" % (e[0], e[1].__context__))
 
-        print("")
+        print("#####  ERRO(S) #####")
         print("%s erro(s) foram encontrados durante a execucao!" % (len(self.errors)))
 
     def rollback(self):
@@ -100,9 +100,11 @@ class MigrateData:
     def migrate(self, import_folder):
         print("Importando dados...")
         self.execute(import_folder, 'migrate')
+
+    def error_append(self, tablename, error):
+        self.errors.append((tablename, error))
         
     def execute(self, import_folder, action, reverse = False):
-
         if action not in self.actions:
             print("Erro: tentando executar acao desconhecida!")
             exit()
@@ -193,6 +195,13 @@ class MigrateData:
         self.engine_target.execute(table.delete())
         print(' %s.%s.%s ... OK' % (params['dbname'], params['schema'], params['table']))
         sys.stdout.flush()        
+
+    def get_accepted_columns(self, inspector, params, with_schema = False):
+        if with_schema == True:
+            columns = [params['table'] + '.' + column['name'] for column in inspector.get_columns(params['table'], params['schema']) if column['type'].__visit_name__.lower() not in self.configurations['exclude_column_types']]
+        else:
+            columns = [column['name'] for column in inspector.get_columns(params['table'], params['schema']) if column['type'].__visit_name__.lower() not in self.configurations['exclude_column_types']]
+        return columns 
     
     def migrate_data(self, params):
         
@@ -204,24 +213,24 @@ class MigrateData:
             table_source = Table(params['table'], metadata_source, autoload=True, autoload_with=self.engine_source, schema=params['schema'])
         except sqlalchemyException.NoSuchTableError:
             self.rollback()
-            
+        inspector = Inspector.from_engine(self.engine_source)
         if params['condition'] == None or params['condition'] == '':
-            data_source = self.s_source.query(table_source).all()
+            columns = self.get_accepted_columns(inspector, params)
+            data_source = self.s_source.query(table_source).with_entities(*(table_source.columns[column] for column in columns)).all()
         else:
-            table_cols = tuple(params['table'] + '.' + col.name for col in table_source.columns)
+            columns = self.get_accepted_columns(inspector, params, with_schema = True)
             if params['condition'].find('JOIN') > 0:
-                inspect_table = Inspector.from_engine(self.engine_source)
-                pk_field = inspect_table.get_pk_constraint(params['table'], params['schema'])['constrained_columns'][0]
+                pk_field = inspector.get_pk_constraint(params['table'], params['schema'])['constrained_columns'][0]
                 sql_subquery = "SELECT DISTINCT " + params['table'] + "." + pk_field + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " " + params['condition'] + " GROUP BY " + params['table'] + "." + pk_field
-                sql = "SELECT " + ",".join(table_cols) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " WHERE " + params['table'] + "." +  pk_field + " IN (" + sql_subquery + ")"
+                sql = "SELECT " + ",".join(columns) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " WHERE " + params['table'] + "." +  pk_field + " IN (" + sql_subquery + ")"
             else:
-                sql = "SELECT " + ",".join(table_cols) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " "  + params['condition']
+                sql = "SELECT " + ",".join(columns) + " FROM " + params['dbname'] + "." + params['schema'] + "." + params['table'] + " AS " + params['table'] + " "  + params['condition']
 
             try:
                 result_source = self.s_source.execute(sql).fetchall()
             except:
                 print(sys.exc_info())
-                self.errors.append(e)
+                self.error_append(params['table'], e)
                 exit()
             
             resultset = []
@@ -235,7 +244,7 @@ class MigrateData:
         
         insert_data = table_target.insert().from_select=data_source
         
-        print(' %s.%s.%s' % (params['dbname'], params['schema'], params['table']), end = "")
+        print(' %s.%s.%s ' % (params['dbname'], params['schema'], params['table']), end = "")
         
         for i in range(len(insert_data))[::self.configurations['insert_chain_size']]:
             y = i + self.configurations['insert_chain_size']
@@ -248,8 +257,8 @@ class MigrateData:
             
             except IntegrityError as e:
                 if (self.configurations['bypass_constrains'] == True):
-                    print('\033[1,31m' + '(x)' + '\033[0m', end = "")
-                    self.errors.append(e)
+                    print('\033[31m' + '(x)' + '\033[0m', end = "")
+                    self.error_append(params['table'], e)
                     sys.stdout.flush()
                     pass
                 else:
