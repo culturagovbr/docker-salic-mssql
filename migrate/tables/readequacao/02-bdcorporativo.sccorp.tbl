@@ -1,0 +1,2 @@
+tbarquivo|INNER JOIN BDCorporativo.sccorp.tbdocumento on tbdocumento.idarquivo = tbarquivo.idarquivo INNER JOIN sac.dbo.tbReadequacao on tbreadequacao.iddocumento = tbdocumento.iddocumento INNER JOIN sac.dbo.projetos projetos on projetos.IdPRONAC = tbreadequacao.idpronac and projetos.anoprojeto = '18'|
+tbdocumento|INNER JOIN sac.dbo.tbReadequacao on tbreadequacao.iddocumento = tbdocumento.iddocumento INNER JOIN sac.dbo.projetos projetos on projetos.IdPRONAC = tbreadequacao.idpronac and projetos.anoprojeto = '18'|
