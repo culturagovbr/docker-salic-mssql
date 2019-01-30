@@ -1,0 +1,2 @@
+nomes|inner join agentes.dbo.agentes agentes on nomes.idagente = agentes.idagente  inner join sac.dbo.projetos projetos on projetos.CgcCpf = agentes.CNPJCPF and projetos.anoprojeto = '18'|
+agentes|INNER JOIN sac.dbo.projetos projetos ON agentes.CNPJCPF = projetos.CgcCpf AND  projetos.anoprojeto = '18'|
