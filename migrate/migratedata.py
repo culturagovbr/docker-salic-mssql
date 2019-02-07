@@ -5,6 +5,7 @@
 
 import math
 import sys
+import os
 from os import listdir, path
 import re
 from sqlalchemy import create_engine, select, MetaData, Table
@@ -172,6 +173,8 @@ class MigrateData:
 
         if any(self.errors):
             self.error_report()
+
+        print("Finalizado")
         
         self.close_connections()
 
@@ -189,6 +192,88 @@ class MigrateData:
 
         return True
 
+    def map_database(self):
+        dbnames = [
+            'agentes.dbo',
+            'sac.dbo',
+            'tabelas.dbo',
+            'BDCORPORATIVO.scCorp',
+            'bdcorporativo.scSAC',
+            'sgcacesso.controledeacesso',
+            'bddne.scdne'
+        ]
+
+        dbinfo = {k:None for k in dbnames}
+
+        ### coleta dados do banco
+        for line in dbnames:
+            
+            dbname, schema = line.split('.')
+            self.db_target['dbname'] = dbname
+            self.db_source['schema'] = schema
+            self.configure()
+            
+            metadata = MetaData(self.engine_source, schema = schema, reflect = True)
+
+            table_names = {name.split('.')[1]: None for name in metadata.tables}
+            
+            inspector = Inspector.from_engine(self.engine_source)
+
+            print("Mapeando banco %s.%s" % (dbname, schema))
+            sys.stdout.flush()
+            for tablename in table_names:
+                table_names[tablename] = inspector.get_foreign_keys(tablename, schema = schema)
+
+            dbinfo[dbname] = table_names
+            
+        tables_by_level = [{}]
+        
+        level = 0
+        interrupt = 10
+        while dbinfo:
+            dbinfo, tables_by_level = check_table_level(dbinfo, tables_by_level, level)
+            level +=1
+            if level > interrupt:
+                break
+            
+        #fd = open('mappings.txt', 'w')
+        #fd.write("")
+        #file.close()
+                
+        print("Mapeamento finalizado.")
+
+    def check_table_level(dbinfo, tables_by_level, level):
+        print('---------------------------')    
+        print(tables_by_level)
+        print('-------')
+        print(level)
+        tables_by_level.append({})
+        dbs = list(dbinfo.keys())
+        for db in dbs:
+            tables = list(dbinfo[db].keys())
+            for table in tables:
+                # nivel 0
+                if not dbinfo[db][table]:
+                    print('primeiro nivel: %s' % (table))
+                    sys.stdout.flush()
+                    # verifica se existe nivel 0
+                    tables_by_level[0][table] = dbinfo[db].pop(table)
+                elif (dbinfo[db][table]):
+                    print('nivel (%s+: %s' % (level, table))
+                    #verifica cada coluna constrained
+                    check_table = []
+                    #print(dbinfo[db][table])
+                    for constraint_field in dbinfo[db][table]:
+                        for table_level in tables_by_level:
+                            if constraint_field['referred_table'] in table_level or constraint_field['referred_table'] == str(table):
+                                check_table.append(True)
+                                break
+                            else:
+                                check_table.append(False)
+                        if False not in check_table:
+                            tables_by_level[level][table] = dbinfo[db].pop(table)
+        return [dbinfo, tables_by_level]
+    
     def flush_data(self, params):
         metadata = MetaData(self.engine_target)
         table = Table(params['table'], metadata, autoload=True, autoload_with=self.engine_source, schema=params['schema'])

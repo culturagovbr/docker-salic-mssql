@@ -9,7 +9,7 @@ configurations = {
     'bypass_constrains': True,
     'insert_chain_size': 10,
     'tables_folder': 'tables',
-    'actions': ('help', 'migrate', 'flush'),
+    'actions': ('help', 'migrate', 'flush', 'map'),
     'exclude_column_types': ('timestamp')
 }
 
@@ -32,6 +32,7 @@ def help_menu():
     print("Uso: ./main.py [acao]")
     print(" migrate [conjunto de tabelas]           Realiza tarefas de migracao descritas na pasta do conjunto de tabelas (pasta migrate/tables)")
     print(" flush [conjunto de tabelas]             Limpa registros do conjunto de tabelas especificado")
+    print(" map                                     Mapeia o banco de dados e relacionamentos")
     print(" help                                    Exibe esta tela de ajuda")    
         
 def show_header():
@@ -67,6 +68,10 @@ def flush(folder):
         display_available()
         exit()    
 
+def map_database():
+    migrate_data = MigrateData(db_config, configurations)
+    migrate_data.map_database()
+
 def main():    
     if len(sys.argv) > 1:
         commands = ['command', 'action', 'folder']
@@ -87,6 +92,8 @@ def main():
                 migrate(folder)
             elif action == 'flush':
                 flush(folder)
+            elif action == 'map':
+                map_database()
             else:
                 help_menu()           
         else:
