@@ -1,0 +1,2 @@
+
+tbDistribuirParecer|INNER JOIN sac.dbo.projetos as projetos ON projetos.idpronac = tbDistribuirParecer.idpronac AND projetos.AnoProjeto='18'|

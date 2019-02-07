@@ -1,0 +1,4 @@
+pessoas|INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '00844309745'|
+pessoa_identificacoes|INNER JOIN tabelas.dbo.pessoas on pessoa_identificacoes.pid_pessoa = pessoas.pes_codigo INNER JOIN tabelas.dbo.Usuarios on usuarios.usu_pessoa = pessoas.pes_codigo and usuarios.usu_identificacao = '00844309745'|pid_pessoa
+usuarios|WHERE usu_identificacao = '00844309745'|
+usuariosxorgaosxgrupos|inner join tabelas.dbo.usuarios usuarios on usuariosxorgaosxgrupos.uog_usuario = usuarios.usu_codigo and  usuarios.usu_identificacao = '00844309745'|

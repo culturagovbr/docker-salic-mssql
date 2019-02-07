@@ -1,0 +1,13 @@
+interessado|INNER JOIN sac.dbo.projetos p ON interessado.cgccpf = p.cgccpf AND p.anoprojeto='18'|
+preprojeto|INNER JOIN sac.dbo.projetos p ON preprojeto.idpreprojeto = p.idprojeto AND p.anoprojeto='18'|
+projetos|INNER JOIN sac.dbo.interessado i ON i.cgccpf = projetos.cgccpf AND projetos.AnoProjeto='18'|
+tbCustosVinculados|INNER JOIN sac.dbo.preprojeto as pr ON tbCustosVinculados.idProjeto = pr.idPreProjeto INNER JOIN sac.dbo.projetos as p ON pr.idpreprojeto = p.idprojeto AND p.anoprojeto='18'|
+abrangencia|INNER JOIN sac.dbo.projetos as p ON abrangencia.idProjeto = p.idprojeto AND p.anoprojeto='18'|
+tbdeslocamento|INNER JOIN sac.dbo.projetos as p ON tbdeslocamento.idProjeto = p.idprojeto AND p.anoprojeto='18'|
+PlanoDistribuicaoProduto|INNER JOIN sac.dbo.projetos as p ON PlanoDistribuicaoProduto.idProjeto = p.idprojeto AND p.anoprojeto='18'|
+tbDetalhaPlanoDistribuicao|INNER JOIN sac.dbo.PlanoDistribuicaoProduto as pl ON tbDetalhaPlanoDistribuicao.idPlanoDistribuicao = pl.idPlanoDistribuicao INNER JOIN sac.dbo.projetos as p ON pl.idProjeto = p.idprojeto AND p.anoprojeto='18'|
+tbplanilhaproposta|INNER JOIN sac.dbo.projetos p ON tbplanilhaproposta.idprojeto = p.idprojeto AND p.anoprojeto = '18'|
+tbPlanilhaProjeto|INNER JOIN sac.dbo.projetos as p ON p.IdPRONAC = tbPlanilhaProjeto.IdPRONAC AND p.anoprojeto='18'|
+tbdocumentospreprojeto|INNER JOIN sac.dbo.projetos as p ON tbdocumentospreprojeto.idProjeto = p.idprojeto AND p.anoprojeto='18'|
+tbdocumentosagentes|INNER JOIN sac.dbo.preprojeto as pr ON tbdocumentosagentes.idAgente = pr.idAgente
+INNER JOIN sac.dbo.projetos as p ON pr.idPreProjeto = p.idprojeto AND p.anoprojeto='18'|
