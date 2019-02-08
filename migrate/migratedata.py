@@ -227,7 +227,6 @@ class MigrateData:
             dbinfo[dbname] = table_names
             
         tables_by_level = [{}]
-        
         level = 0
         interrupt = 10
         while dbinfo:
@@ -235,43 +234,36 @@ class MigrateData:
             level +=1
             if level > interrupt:
                 break
-            
-        #fd = open('mappings.txt', 'w')
-        #fd.write("")
-        #file.close()
+        
+        fd = open('mapping-db.txt', 'w')
+        for line in tables_by_level:
+            fd.write(line)
+        file.close()
                 
         print("Mapeamento finalizado.")
 
     def check_table_level(dbinfo, tables_by_level, level):
-        print('---------------------------')    
-        print(tables_by_level)
-        print('-------')
-        print(level)
         tables_by_level.append({})
         dbs = list(dbinfo.keys())
         for db in dbs:
             tables = list(dbinfo[db].keys())
             for table in tables:
-                # nivel 0
                 if not dbinfo[db][table]:
-                    print('primeiro nivel: %s' % (table))
                     sys.stdout.flush()
-                    # verifica se existe nivel 0
                     tables_by_level[0][table] = dbinfo[db].pop(table)
                 elif (dbinfo[db][table]):
-                    print('nivel (%s+: %s' % (level, table))
-                    #verifica cada coluna constrained
-                    check_table = []
-                    #print(dbinfo[db][table])
+                    check_tables = []
                     for constraint_field in dbinfo[db][table]:
+                        check = False
                         for table_level in tables_by_level:
                             if constraint_field['referred_table'] in table_level or constraint_field['referred_table'] == str(table):
-                                check_table.append(True)
+                                check = True
                                 break
-                            else:
-                                check_table.append(False)
-                        if False not in check_table:
-                            tables_by_level[level][table] = dbinfo[db].pop(table)
+                            elif constraint_field['referred_table'] == str(table):
+                                check = True
+                        check_tables.append(check)
+                    if False not in check_table:
+                        tables_by_level[level][table] = dbinfo[db].pop(table)
         return [dbinfo, tables_by_level]
     
     def flush_data(self, params):
