@@ -10,17 +10,7 @@ for i in {30..0}; do
   sleep 1
 done
 
-echo "$0: Initializing database"
-for f in /docker-entrypoint-initdb.d/*; do
-  case "$f" in
-    *.sh)     echo "$0: running $f"; . "$f" ;;
-    *.sql)    echo "$0: running $f"; sqlcmd -U SA -P $MSSQL_SA_PASSWORD -X -i  "$f"; echo ;;
-    *)        echo "$0: ignoring $f" ;;
-  esac
-  echo
-done
-echo "$0: SQL Server Database ready"
-
+echo "$0: inicializando dump da estrutura"
 for entry in $(ls schemas/*.bak)
 do
   echo importando $entry
@@ -30,6 +20,19 @@ do
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE '$shortname' FROM DISK = "/tmp/schemas/'$shortname'.bak" WITH MOVE "'$shortname'_Est" TO "/var/opt/mssql/data/'$shortname'_Est.mdf", MOVE "'$shortname'_Est_log" TO "/var/opt/mssql/data/'$shortname'_Est_log.ldf"'
 done
 
-echo "$0: Loads initial data..."
-cd /tmp/migrate
-./main.py migrate 0-initial
+echo "$0: inicializando dump da base"
+for f in docker-entrypoint-initdb.d/*; do
+  echo "teste $f";
+  case "$f" in
+    *.sh)     echo "$0: running $f"; . "$f" ;;
+    *.sql)    echo "$0: running $f"; /opt/mssql-tools/bin/sqlcmd -U SA -P "salic@123456" -X -i  "$f"; echo ;;
+    *)        echo "$0: ignoring $f" ;;
+  esac
+  echo
+done
+echo "$0: SQL Server Database ready"
+
+# echo "$0: Loads initial data..."
+# cd /tmp/migrate
+# ./main.py migrate 0-initial
+  
