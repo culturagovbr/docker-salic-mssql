@@ -216,7 +216,7 @@ INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,o
 ;
 INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,org_sigla,org_CEI,org_UF,org_tipo,org_status,org_controle) VALUES 
 (181,47611,0,NULL,'SFC/Auditori',NULL,'DF',9,1,NULL)
-,(182,48070,-1,NULL,'Pró-Memoria ',40099,'DF',9,1,NULL)
+,(182,48070,-1,NULL,'PrÃ³-Memoria ',40099,'DF',9,1,NULL)
 ,(183,48425,-1,153,'SMAC/P.AdHoc',NULL,'DF',1,1,NULL)
 ,(184,2541,-1,NULL,'MA          ',21000,'DF',9,1,NULL)
 ,(185,51692,-1,NULL,'MP          ',4500,'DF',9,1,NULL)
@@ -247,7 +247,7 @@ INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,o
 ,(206,67146,472,52,'SEC         ',NULL,'DF',2,1,NULL)
 ,(207,35128,-1,NULL,'CFC         ',40004,'DF',9,1,NULL)
 ,(208,148,0,35,'DPAG        ',NULL,'DF',1,1,NULL)
-,(209,34955,-1,NULL,'Pró-Leitura ',40105,'DF',9,1,NULL)
+,(209,34955,-1,NULL,'PrÃ³-Leitura ',40105,'DF',9,1,NULL)
 ,(210,79021,0,17,'DGE         ',NULL,'DF',2,1,NULL)
 ;
 INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,org_sigla,org_CEI,org_UF,org_tipo,org_status,org_controle) VALUES 
@@ -388,7 +388,7 @@ INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,o
 ,(323,152531,0,12,'C-Geral     ',NULL,'DF',1,0,NULL)
 ,(324,167376,0,218,'COND        ',NULL,'DF',1,1,NULL)
 ,(325,167759,0,273,'GEPRO       ',NULL,'DF',2,1,NULL)
-,(326,167760,0,273,'AÇÕES       ',414,'DF',2,1,NULL)
+,(326,167760,0,273,'AÃ‡Ã•ES       ',414,'DF',2,1,NULL)
 ,(327,167761,0,273,'MARES       ',NULL,'DF',2,1,NULL)
 ,(328,167762,0,273,'CA          ',NULL,'DF',2,1,NULL)
 ,(329,170624,0,204,'DIRETORIA   ',NULL,'RJ',9,1,NULL)
@@ -457,7 +457,7 @@ INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,o
 INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,org_sigla,org_CEI,org_UF,org_tipo,org_status,org_controle) VALUES 
 (381,211784,0,340,'CGEL        ',NULL,'DF',2,1,NULL)
 ,(382,98921,0,92,'CEACEN      ',NULL,'RJ',1,1,NULL)
-,(383,211787,0,382,'CODANÇA     ',NULL,'RJ',1,1,NULL)
+,(383,211787,0,382,'CODANÃ‡A     ',NULL,'RJ',1,1,NULL)
 ,(384,211788,0,382,'COTEATRO    ',NULL,'RJ',1,1,NULL)
 ,(385,211789,0,382,'COCIRCO     ',NULL,'RJ',1,1,NULL)
 ,(386,211795,0,382,'ENC         ',NULL,'RJ',1,1,NULL)
@@ -524,7 +524,7 @@ INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,o
 ,(437,223405,0,94,'RRPSP       ',NULL,'SP',1,1,NULL)
 ,(438,223406,0,94,'RRPBA       ',NULL,'BA',1,1,NULL)
 ,(439,223407,0,94,'RRPRJ       ',NULL,'RJ',1,1,NULL)
-,(440,198700,0,91,'PAÇO        ',NULL,'RJ',1,1,NULL)
+,(440,198700,0,91,'PAÃ‡O        ',NULL,'RJ',1,1,NULL)
 ;
 INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,org_sigla,org_CEI,org_UF,org_tipo,org_status,org_controle) VALUES 
 (441,44169,0,91,'SBM         ',NULL,'RJ',1,1,NULL)
@@ -750,7 +750,7 @@ INSERT INTO Tabelas.dbo.Orgaos (org_codigo,org_pessoa,org_gerente,org_superior,o
 ,(626,279180,0,625,'COACO       ',NULL,'DF',1,1,NULL)
 ,(627,279181,0,626,'SEPOC       ',NULL,'DF',1,1,NULL)
 ,(628,18227,0,571,'ALMOXARIFADO',NULL,'DF',1,1,NULL)
-,(629,223567,0,571,'PATRIMÕNIO  ',NULL,'DF',1,1,NULL)
+,(629,223567,0,571,'PATRIMÃ•NIO  ',NULL,'DF',1,1,NULL)
 ,(630,258427,0,524,'CGEL        ',NULL,'DF',1,1,NULL)
 ,(631,265993,0,524,'CGL         ',NULL,'DF',1,1,NULL)
 ;

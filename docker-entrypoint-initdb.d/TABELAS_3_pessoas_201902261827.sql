@@ -5,14 +5,12 @@
 ,(4,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(5,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(6,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(6,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(7,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(8,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(9,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (10,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(10,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(11,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(12,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(13,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
@@ -30,7 +28,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(23,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(24,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(25,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(25,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(26,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(27,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ;
@@ -41,16 +38,11 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(31,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(32,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(33,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(33,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(33,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(34,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(35,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (36,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(36,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(36,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(37,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(37,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(38,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(39,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
@@ -63,10 +55,8 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(44,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(45,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(46,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(46,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(47,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(48,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(49,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(49,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(50,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ;
@@ -89,7 +79,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(64,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(65,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(66,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
-,(67,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(67,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(68,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(69,1,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
@@ -126,9 +115,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(94,3,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(95,3,1,0,0,0,NULL,2,0,0,'1998-01-31 10:52:00.000',NULL,NULL,NULL,NULL)
 ,(148,1,1,0,0,0,NULL,2,26,38,'1998-02-03 12:46:00.000',NULL,NULL,NULL,NULL)
-,(148,1,1,0,0,0,NULL,2,26,38,'1998-02-03 12:46:00.000',NULL,NULL,NULL,NULL)
-,(148,1,1,0,0,0,NULL,2,26,38,'1998-02-03 12:46:00.000',NULL,NULL,NULL,NULL)
-,(157,1,1,0,0,0,NULL,2,26,40,'1998-02-03 15:17:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (157,1,1,0,0,0,NULL,2,26,40,'1998-02-03 15:17:00.000',NULL,NULL,NULL,NULL)
@@ -184,7 +170,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(12063,0,1,0,0,0,NULL,2,0,0,'1998-06-19 09:24:00.000',NULL,NULL,NULL,NULL)
 ,(12997,1,1,0,0,0,NULL,2,0,0,'1998-07-08 07:58:00.000',NULL,NULL,NULL,NULL)
 ,(14025,0,1,0,0,0,NULL,0,23,89,'1998-08-03 12:03:00.000',NULL,NULL,NULL,NULL)
-,(14025,0,1,0,0,0,NULL,0,23,89,'1998-08-03 12:03:00.000',NULL,NULL,NULL,NULL)
 ,(14158,0,1,0,0,0,NULL,0,2,147,'1998-08-05 17:27:00.000',148,38,'2000-05-30 12:35:00.000',NULL)
 ,(17058,3,1,0,0,0,NULL,2,0,0,'1998-09-10 15:41:00.000',NULL,NULL,NULL,NULL)
 ,(18227,0,1,0,0,0,NULL,0,26,50,'1998-10-06 09:42:00.000',26,50,'1998-10-06 09:42:00.000',NULL)
@@ -212,13 +197,11 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(31834,1,1,0,0,0,NULL,2,78,107,'1999-08-24 14:34:00.000',1,1,'1999-09-02 10:57:00.000',NULL)
 ,(32660,1,1,0,0,0,NULL,2,17,88,'1999-09-09 17:51:00.000',1,1,'1999-09-10 18:05:00.000',NULL)
 ,(32764,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
-,(32764,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (32765,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32766,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32767,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
-,(32768,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32768,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32769,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32770,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
@@ -233,9 +216,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(32777,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32778,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
 ,(32779,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
-,(32779,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:19:00.000',NULL,NULL,NULL,NULL)
-,(32780,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:29:00.000',NULL,NULL,NULL,NULL)
-,(32780,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:29:00.000',NULL,NULL,NULL,NULL)
 ,(32780,1,1,0,0,0,NULL,2,0,0,'1999-09-10 18:29:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
@@ -271,8 +251,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(48425,0,1,0,0,0,NULL,2,0,0,'2001-03-13 14:34:00.000',1,1,'2001-03-13 14:38:00.000',NULL)
 ,(49266,0,1,0,0,0,NULL,0,31,128,'2001-04-10 17:47:00.000',NULL,NULL,NULL,NULL)
 ,(50952,1,1,0,0,0,NULL,0,4,269,'2001-05-25 13:47:00.000',247,1771,'2006-02-13 15:50:00.000',NULL)
-,(51692,3,1,0,0,0,NULL,2,0,0,'2001-06-20 16:21:00.000',NULL,NULL,NULL,NULL)
-,(51692,3,1,0,0,0,NULL,2,0,0,'2001-06-20 16:21:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (51692,3,1,0,0,0,NULL,2,0,0,'2001-06-20 16:21:00.000',NULL,NULL,NULL,NULL)
@@ -312,10 +290,8 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (79034,3,1,0,0,0,NULL,2,0,0,'2003-09-09 11:29:00.000',NULL,NULL,NULL,NULL)
-,(79034,3,1,0,0,0,NULL,2,0,0,'2003-09-09 11:29:00.000',NULL,NULL,NULL,NULL)
 ,(79035,3,1,0,0,0,NULL,2,0,0,'2003-09-09 11:29:00.000',NULL,NULL,NULL,NULL)
 ,(79779,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
-,(79780,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
 ,(79780,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
 ,(79783,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
 ,(79784,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
@@ -327,7 +303,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(79788,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
 ,(79789,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
 ,(79790,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
-,(79790,3,1,0,0,0,NULL,2,0,0,'2003-09-24 13:08:00.000',NULL,NULL,NULL,NULL)
 ,(80304,3,1,0,0,0,NULL,2,0,0,'2003-10-06 17:38:00.000',NULL,NULL,NULL,NULL)
 ,(80509,1,1,0,0,0,NULL,2,139,231,'2003-10-09 17:38:00.000',NULL,NULL,NULL,NULL)
 ,(82395,1,1,0,0,0,NULL,2,0,0,'2003-11-14 17:53:00.000',NULL,NULL,NULL,NULL)
@@ -336,12 +311,9 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (87184,0,1,0,0,0,NULL,0,0,0,'2004-04-06 17:12:00.000',NULL,NULL,NULL,NULL)
-,(87184,0,1,0,0,0,NULL,0,0,0,'2004-04-06 17:12:00.000',NULL,NULL,NULL,NULL)
 ,(87305,0,1,0,0,0,NULL,0,212,278,'2004-04-12 11:14:00.000',NULL,NULL,NULL,NULL)
 ,(87467,0,1,0,0,0,NULL,0,217,175,'2004-04-15 08:39:00.000',217,175,'2004-04-15 08:39:00.000',NULL)
 ,(87773,0,1,0,0,0,NULL,0,218,733,'2004-04-23 09:11:00.000',NULL,NULL,NULL,NULL)
-,(89515,0,1,0,0,0,NULL,0,37,168,'2004-05-31 16:58:00.000',NULL,NULL,NULL,NULL)
-,(89515,0,1,0,0,0,NULL,0,37,168,'2004-05-31 16:58:00.000',NULL,NULL,NULL,NULL)
 ,(89515,0,1,0,0,0,NULL,0,37,168,'2004-05-31 16:58:00.000',NULL,NULL,NULL,NULL)
 ,(89607,0,1,0,0,0,NULL,0,4,269,'2004-06-01 17:16:00.000',275,2066,'2008-03-13 17:16:00.000',NULL)
 ,(90447,0,1,0,0,0,NULL,0,4,147,'2004-06-23 11:32:00.000',NULL,NULL,NULL,NULL)
@@ -361,7 +333,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (91003,0,1,0,0,0,NULL,0,219,3,'2004-07-07 11:42:00.000',NULL,NULL,NULL,NULL)
 ,(91004,0,1,0,0,0,NULL,0,219,3,'2004-07-07 11:42:00.000',NULL,NULL,NULL,NULL)
-,(92032,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:11:00.000',NULL,NULL,NULL,NULL)
 ,(92032,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:11:00.000',NULL,NULL,NULL,NULL)
 ,(92033,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:13:00.000',NULL,NULL,NULL,NULL)
 ,(92034,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:14:00.000',NULL,NULL,NULL,NULL)
@@ -387,18 +358,11 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(92052,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:32:00.000',NULL,NULL,NULL,NULL)
 ,(92053,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:32:00.000',NULL,NULL,NULL,NULL)
 ,(92054,0,1,0,0,0,NULL,0,0,0,'2004-08-04 11:33:00.000',NULL,NULL,NULL,NULL)
-,(92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
-,(92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
-,(92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
-,(92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
-,(92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
-,(92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (92627,0,1,0,0,0,NULL,0,2,551,'2004-08-17 10:14:00.000',NULL,NULL,NULL,NULL)
 ,(92818,0,1,0,0,0,NULL,0,218,733,'2004-08-19 14:59:00.000',NULL,NULL,NULL,NULL)
 ,(93497,0,1,0,0,0,NULL,0,218,1220,'2004-08-31 17:24:00.000',NULL,NULL,NULL,NULL)
-,(93863,0,1,0,0,0,NULL,0,34,1122,'2004-09-14 09:00:00.000',NULL,NULL,NULL,NULL)
 ,(93863,0,1,0,0,0,NULL,0,34,1122,'2004-09-14 09:00:00.000',NULL,NULL,NULL,NULL)
 ,(95590,0,1,0,0,0,NULL,0,213,1145,'2004-10-19 12:34:00.000',NULL,NULL,NULL,NULL)
 ,(98921,0,1,0,0,0,NULL,0,4,147,'2005-02-03 12:01:00.000',NULL,NULL,NULL,NULL)
@@ -408,13 +372,7 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (108550,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:17:00.000',NULL,NULL,NULL,NULL)
-,(108550,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:17:00.000',NULL,NULL,NULL,NULL)
-,(108550,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:17:00.000',NULL,NULL,NULL,NULL)
 ,(108551,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:17:00.000',NULL,NULL,NULL,NULL)
-,(108551,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:17:00.000',NULL,NULL,NULL,NULL)
-,(108551,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:17:00.000',NULL,NULL,NULL,NULL)
-,(108552,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:21:00.000',NULL,NULL,NULL,NULL)
-,(108552,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:21:00.000',NULL,NULL,NULL,NULL)
 ,(108552,0,1,0,0,0,NULL,0,0,0,'2005-08-10 11:21:00.000',NULL,NULL,NULL,NULL)
 ,(109088,0,1,0,0,0,NULL,0,17,83,'2005-08-17 12:53:00.000',NULL,NULL,NULL,NULL)
 ;
@@ -435,24 +393,19 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(127727,0,1,0,0,0,NULL,0,271,20,'2006-09-20 16:59:00.000',NULL,NULL,NULL,NULL)
 ,(128070,0,1,0,0,0,NULL,0,4,147,'2006-09-29 11:04:00.000',NULL,NULL,NULL,NULL)
 ,(131367,0,1,0,0,0,NULL,0,0,0,'2006-12-14 09:42:00.000',NULL,NULL,NULL,NULL)
-,(131367,0,1,0,0,0,NULL,0,0,0,'2006-12-14 09:42:00.000',NULL,NULL,NULL,NULL)
 ,(132633,0,1,0,0,0,NULL,0,0,0,'2007-01-23 16:14:00.000',NULL,NULL,NULL,NULL)
 ,(133190,0,1,0,0,0,NULL,0,0,0,'2007-02-05 15:39:00.000',NULL,NULL,NULL,NULL)
 ,(133517,0,1,0,0,0,NULL,0,4,147,'2007-02-14 09:54:00.000',NULL,NULL,NULL,NULL)
 ,(136136,0,1,0,0,0,NULL,0,17,2047,'2007-04-04 09:35:00.000',NULL,NULL,NULL,NULL)
-,(136697,0,1,0,0,0,NULL,0,295,1294,'2007-04-16 13:14:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (136697,0,1,0,0,0,NULL,0,295,1294,'2007-04-16 13:14:00.000',NULL,NULL,NULL,NULL)
-,(136697,0,1,0,0,0,NULL,0,295,1294,'2007-04-16 13:14:00.000',NULL,NULL,NULL,NULL)
 ,(137765,0,1,0,0,0,NULL,0,17,2047,'2007-05-03 16:43:00.000',NULL,NULL,NULL,NULL)
 ,(138193,0,1,0,0,0,NULL,0,17,2290,'2007-05-10 15:52:00.000',NULL,NULL,NULL,NULL)
 ,(138601,0,1,0,0,0,NULL,0,17,2047,'2007-05-18 15:07:00.000',NULL,NULL,NULL,NULL)
 ,(140284,0,1,0,0,0,NULL,0,17,2290,'2007-06-25 15:11:00.000',NULL,NULL,NULL,NULL)
 ,(142240,0,1,0,0,0,NULL,0,0,0,'2007-08-02 10:10:00.000',NULL,NULL,NULL,NULL)
 ,(144207,0,1,0,0,0,NULL,0,0,0,'2007-09-05 11:31:00.000',NULL,NULL,NULL,NULL)
-,(144211,0,1,0,0,0,NULL,0,0,0,'2007-09-05 11:46:00.000',NULL,NULL,NULL,NULL)
-,(144211,0,1,0,0,0,NULL,0,0,0,'2007-09-05 11:46:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (144211,0,1,0,0,0,NULL,0,0,0,'2007-09-05 11:46:00.000',NULL,NULL,NULL,NULL)
@@ -461,7 +414,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(145277,0,1,0,0,0,NULL,0,0,0,'2007-09-21 17:00:00.000',NULL,NULL,NULL,NULL)
 ,(147275,0,1,0,0,0,NULL,0,4,147,'2007-10-26 12:54:00.000',NULL,NULL,NULL,NULL)
 ,(150633,0,1,0,0,0,NULL,0,4,147,'2007-12-13 12:48:00.000',NULL,NULL,NULL,NULL)
-,(151122,0,1,0,0,0,NULL,0,0,0,'2007-12-21 16:33:00.000',NULL,NULL,NULL,NULL)
 ,(151122,0,1,0,0,0,NULL,0,0,0,'2007-12-21 16:33:00.000',NULL,NULL,NULL,NULL)
 ,(151339,0,1,0,0,0,NULL,0,17,2047,'2008-01-02 14:32:00.000',NULL,NULL,NULL,NULL)
 ,(152531,0,1,0,0,0,NULL,0,254,1624,'2008-02-08 15:54:00.000',NULL,NULL,NULL,NULL)
@@ -472,7 +424,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(155032,0,1,0,0,0,NULL,0,276,1094,'2008-04-08 10:10:00.000',NULL,NULL,NULL,NULL)
 ,(155390,0,1,0,0,0,NULL,0,17,1071,'2008-04-14 13:04:00.000',NULL,NULL,NULL,NULL)
 ,(155773,0,1,0,0,0,NULL,0,17,2047,'2008-04-23 09:42:00.000',NULL,NULL,NULL,NULL)
-,(164680,0,1,0,0,0,NULL,0,0,0,'2008-11-13 16:50:00.000',NULL,NULL,NULL,NULL)
 ,(164680,0,1,0,0,0,NULL,0,0,0,'2008-11-13 16:50:00.000',NULL,NULL,NULL,NULL)
 ,(164738,0,1,0,0,0,NULL,0,0,0,'2008-11-14 16:36:00.000',NULL,NULL,NULL,NULL)
 ,(164740,0,1,0,0,0,NULL,0,0,0,'2008-11-14 16:37:00.000',NULL,NULL,NULL,NULL)
@@ -494,12 +445,10 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 (167935,0,1,0,0,0,NULL,0,274,1366,'2009-02-05 16:33:00.000',NULL,NULL,NULL,NULL)
 ,(168374,0,1,0,0,0,NULL,0,290,2918,'2009-02-17 12:15:00.000',NULL,NULL,NULL,NULL)
 ,(170359,0,1,0,0,0,NULL,0,4,147,'2009-03-31 13:15:00.000',NULL,NULL,NULL,NULL)
-,(170359,0,1,0,0,0,NULL,0,4,147,'2009-03-31 13:15:00.000',NULL,NULL,NULL,NULL)
 ,(170624,0,1,0,0,0,NULL,0,0,0,'2009-04-03 15:12:00.000',NULL,NULL,NULL,NULL)
 ,(170625,0,1,0,0,0,NULL,0,0,0,'2009-04-03 15:13:00.000',NULL,NULL,NULL,NULL)
 ,(173985,0,1,0,0,0,NULL,0,273,1842,'2009-05-22 15:45:00.000',NULL,NULL,NULL,NULL)
 ,(175711,0,1,0,0,0,NULL,0,4,417,'2009-06-15 17:06:00.000',NULL,NULL,NULL,NULL)
-,(176415,0,1,0,0,0,NULL,0,0,0,'2009-06-23 15:31:00.000',NULL,NULL,NULL,NULL)
 ,(176415,0,1,0,0,0,NULL,0,0,0,'2009-06-23 15:31:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
@@ -512,7 +461,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(179116,0,1,0,0,0,NULL,0,290,2635,'2009-07-31 17:23:00.000',NULL,NULL,NULL,NULL)
 ,(184120,0,1,0,0,0,NULL,0,0,0,'2009-09-23 17:01:00.000',NULL,NULL,NULL,NULL)
 ,(184126,0,1,0,0,0,NULL,0,0,0,'2009-09-23 17:20:00.000',NULL,NULL,NULL,NULL)
-,(184127,0,1,0,0,0,NULL,0,0,0,'2009-09-23 17:21:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (184127,0,1,0,0,0,NULL,0,0,0,'2009-09-23 17:21:00.000',NULL,NULL,NULL,NULL)
@@ -521,7 +469,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(187983,0,1,0,0,0,NULL,0,290,3465,'2009-12-01 17:49:00.000',NULL,NULL,NULL,NULL)
 ,(189661,0,1,0,0,0,NULL,0,229,2584,'2010-01-04 15:32:00.000',NULL,NULL,NULL,NULL)
 ,(189841,0,1,0,0,0,NULL,0,0,0,'2010-01-08 13:55:00.000',NULL,NULL,NULL,NULL)
-,(191680,0,1,0,0,0,NULL,0,290,3465,'2010-02-09 16:04:00.000',NULL,NULL,NULL,NULL)
 ,(191680,0,1,0,0,0,NULL,0,290,3465,'2010-02-09 16:04:00.000',NULL,NULL,NULL,NULL)
 ,(193665,0,1,0,0,0,NULL,0,0,0,'2010-03-15 16:15:00.000',NULL,NULL,NULL,NULL)
 ,(193666,0,1,0,0,0,NULL,0,0,0,'2010-03-15 16:16:00.000',NULL,NULL,NULL,NULL)
@@ -590,7 +537,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 (213386,0,1,0,0,0,NULL,0,4,4577,'2010-10-15 18:24:00.000',NULL,NULL,NULL,NULL)
 ,(214753,0,1,0,0,0,NULL,0,290,4365,'2010-11-08 16:42:00.000',NULL,NULL,NULL,NULL)
 ,(215765,0,1,0,0,0,NULL,0,4,4577,'2010-11-22 13:21:00.000',NULL,NULL,NULL,NULL)
-,(215765,0,1,0,0,0,NULL,0,4,4577,'2010-11-22 13:21:00.000',NULL,NULL,NULL,NULL)
 ,(216405,0,1,0,0,0,NULL,0,0,0,'2010-11-30 09:23:00.000',NULL,NULL,NULL,NULL)
 ,(216406,0,1,0,0,0,NULL,0,0,0,'2010-11-30 09:23:00.000',NULL,NULL,NULL,NULL)
 ,(216795,0,1,0,0,0,NULL,0,290,4071,'2010-12-06 15:43:00.000',NULL,NULL,NULL,NULL)
@@ -605,7 +551,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(220385,0,1,0,0,0,NULL,0,290,3441,'2011-02-09 09:45:00.000',NULL,NULL,NULL,NULL)
 ,(220426,0,1,0,0,0,NULL,0,0,0,'2011-02-09 15:47:00.000',NULL,NULL,NULL,NULL)
 ,(220697,0,1,0,0,0,NULL,0,290,4080,'2011-02-11 17:34:00.000',NULL,NULL,NULL,NULL)
-,(220736,0,1,0,0,0,NULL,0,4,4703,'2011-02-14 10:46:00.000',NULL,NULL,NULL,NULL)
 ,(220736,0,1,0,0,0,NULL,0,4,4703,'2011-02-14 10:46:00.000',NULL,NULL,NULL,NULL)
 ,(221027,0,1,0,0,0,NULL,0,334,1482,'2011-02-16 16:28:00.000',NULL,NULL,NULL,NULL)
 ,(221047,0,1,0,0,0,NULL,0,290,3441,'2011-02-16 18:22:00.000',NULL,NULL,NULL,NULL)
@@ -625,7 +570,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (223413,0,1,0,0,0,NULL,0,0,0,'2011-03-22 09:06:00.000',NULL,NULL,NULL,NULL)
 ,(223418,0,1,0,0,0,NULL,0,0,0,'2011-03-22 09:09:00.000',NULL,NULL,NULL,NULL)
-,(223448,0,1,0,0,0,NULL,0,0,0,'2011-03-22 11:47:00.000',NULL,NULL,NULL,NULL)
 ,(223567,0,1,0,0,0,NULL,0,161,2606,'2011-03-23 10:06:00.000',NULL,NULL,NULL,NULL)
 ,(223801,0,1,0,0,0,NULL,0,273,4889,'2011-03-24 15:56:00.000',NULL,NULL,NULL,NULL)
 ,(224626,0,1,0,0,0,NULL,0,0,0,'2011-04-06 08:41:00.000',NULL,NULL,NULL,NULL)
@@ -638,7 +582,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 (225439,0,1,0,0,0,NULL,0,0,0,'2011-04-14 08:40:00.000',NULL,NULL,NULL,NULL)
 ,(226097,0,1,0,0,0,NULL,0,0,0,'2011-04-25 10:03:00.000',NULL,NULL,NULL,NULL)
 ,(227041,0,1,0,0,0,NULL,0,287,5011,'2011-05-10 16:16:00.000',NULL,NULL,NULL,NULL)
-,(227461,0,1,0,0,0,NULL,0,287,5011,'2011-05-17 15:21:00.000',NULL,NULL,NULL,NULL)
 ,(227461,0,1,0,0,0,NULL,0,287,5011,'2011-05-17 15:21:00.000',NULL,NULL,NULL,NULL)
 ,(229488,0,1,0,0,0,NULL,0,455,4365,'2011-06-16 16:48:00.000',NULL,NULL,NULL,NULL)
 ,(230351,0,1,0,0,0,NULL,0,4,3029,'2011-07-04 11:38:00.000',NULL,NULL,NULL,NULL)
@@ -665,7 +608,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(240228,0,1,0,0,0,NULL,0,0,0,'2012-01-04 10:38:00.000',NULL,NULL,NULL,NULL)
 ,(240229,0,1,0,0,0,NULL,0,0,0,'2012-01-04 10:39:00.000',NULL,NULL,NULL,NULL)
 ,(240406,0,1,0,0,0,NULL,0,0,0,'2012-01-09 10:58:00.000',NULL,NULL,NULL,NULL)
-,(240406,0,1,0,0,0,NULL,0,0,0,'2012-01-09 10:58:00.000',NULL,NULL,NULL,NULL)
 ,(240407,0,1,0,0,0,NULL,0,0,0,'2012-01-09 11:01:00.000',NULL,NULL,NULL,NULL)
 ,(240408,0,1,0,0,0,NULL,0,0,0,'2012-01-09 11:02:00.000',NULL,NULL,NULL,NULL)
 ,(242431,0,1,0,0,0,NULL,0,0,0,'2012-02-24 17:16:00.000',NULL,NULL,NULL,NULL)
@@ -679,16 +621,11 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(247481,0,1,0,0,0,NULL,0,0,0,'2012-06-11 10:10:00.000',NULL,NULL,NULL,NULL)
 ,(247482,0,1,0,0,0,NULL,0,0,0,'2012-06-11 10:10:00.000',NULL,NULL,NULL,NULL)
 ,(247646,0,1,0,0,0,NULL,0,0,0,'2012-06-13 16:23:00.000',NULL,NULL,NULL,NULL)
-,(247646,0,1,0,0,0,NULL,0,0,0,'2012-06-13 16:23:00.000',NULL,NULL,NULL,NULL)
-,(247647,0,1,0,0,0,NULL,0,0,0,'2012-06-13 16:26:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (247647,0,1,0,0,0,NULL,0,0,0,'2012-06-13 16:26:00.000',NULL,NULL,NULL,NULL)
 ,(247648,0,1,0,0,0,NULL,0,0,0,'2012-06-13 16:27:00.000',NULL,NULL,NULL,NULL)
 ,(248113,0,1,0,0,0,NULL,0,0,0,'2012-06-25 10:04:00.000',NULL,NULL,NULL,NULL)
-,(248113,0,1,0,0,0,NULL,0,0,0,'2012-06-25 10:04:00.000',NULL,NULL,NULL,NULL)
-,(248113,0,1,0,0,0,NULL,0,0,0,'2012-06-25 10:04:00.000',NULL,NULL,NULL,NULL)
-,(248114,0,1,0,0,0,NULL,0,0,0,'2012-06-25 10:06:00.000',NULL,NULL,NULL,NULL)
 ,(248114,0,1,0,0,0,NULL,0,0,0,'2012-06-25 10:06:00.000',NULL,NULL,NULL,NULL)
 ,(248996,0,1,0,0,0,NULL,0,300,5036,'2012-07-11 11:05:00.000',NULL,NULL,NULL,NULL)
 ,(249700,0,1,0,0,0,NULL,0,0,0,'2012-07-19 17:11:00.000',NULL,NULL,NULL,NULL)
@@ -702,8 +639,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(255393,0,1,0,0,0,NULL,0,291,4580,'2012-10-30 19:17:00.000',NULL,NULL,NULL,NULL)
 ,(257198,0,1,0,0,0,NULL,0,0,0,'2012-11-28 09:59:00.000',NULL,NULL,NULL,NULL)
 ,(257339,0,1,0,0,0,NULL,0,281,178,'2012-11-29 18:31:00.000',NULL,NULL,NULL,NULL)
-,(257339,0,1,0,0,0,NULL,0,281,178,'2012-11-29 18:31:00.000',NULL,NULL,NULL,NULL)
-,(258427,0,1,0,0,0,NULL,0,455,6304,'2012-12-17 12:09:00.000',NULL,NULL,NULL,NULL)
 ,(258427,0,1,0,0,0,NULL,0,455,6304,'2012-12-17 12:09:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
@@ -716,11 +651,9 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(267918,0,1,0,0,0,NULL,0,0,0,'2013-05-08 17:36:00.000',NULL,NULL,NULL,NULL)
 ,(267919,0,1,0,0,0,NULL,0,0,0,'2013-05-08 17:37:00.000',NULL,NULL,NULL,NULL)
 ,(267920,0,1,0,0,0,NULL,0,0,0,'2013-05-08 17:38:00.000',NULL,NULL,NULL,NULL)
-,(268589,0,1,0,0,0,NULL,0,0,0,'2013-05-16 14:41:00.000',NULL,NULL,NULL,NULL)
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (268589,0,1,0,0,0,NULL,0,0,0,'2013-05-16 14:41:00.000',NULL,NULL,NULL,NULL)
-,(268589,0,1,0,0,0,NULL,0,0,0,'2013-05-16 14:41:00.000',NULL,NULL,NULL,NULL)
 ,(268590,0,1,0,0,0,NULL,0,0,0,'2013-05-16 14:42:00.000',NULL,NULL,NULL,NULL)
 ,(268591,0,1,0,0,0,NULL,0,0,0,'2013-05-16 14:42:00.000',NULL,NULL,NULL,NULL)
 ,(268592,0,1,0,0,0,NULL,0,0,0,'2013-05-16 14:42:00.000',NULL,NULL,NULL,NULL)
@@ -828,7 +761,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ;
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (334437,0,1,0,0,0,NULL,0,0,0,'2016-11-11 15:27:00.000',NULL,NULL,NULL,NULL)
-,(334437,0,1,0,0,0,NULL,0,0,0,'2016-11-11 15:27:00.000',NULL,NULL,NULL,NULL)
 ,(334438,0,1,0,0,0,NULL,0,0,0,'2016-11-11 15:29:00.000',NULL,NULL,NULL,NULL)
 ,(334439,0,1,0,0,0,NULL,0,0,0,'2016-11-11 15:30:00.000',NULL,NULL,NULL,NULL)
 ,(334441,0,1,0,0,0,NULL,0,0,0,'2016-11-11 15:31:00.000',NULL,NULL,NULL,NULL)
@@ -841,10 +773,6 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pes_administracao,pes_utilidade_publica,pes_superior,pes_validade,pes_orgao_cadastrador,pes_usuario_cadastrador,pes_data_cadastramento,pes_orgao_atualizador,pes_usuario_atualizador,pes_data_atualizacao,pes_controle) VALUES 
 (334447,0,1,0,0,0,NULL,0,0,0,'2016-11-11 15:41:00.000',NULL,NULL,NULL,NULL)
 ,(334452,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:02:00.000',NULL,NULL,NULL,NULL)
-,(334453,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:04:00.000',NULL,NULL,NULL,NULL)
-,(334453,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:04:00.000',NULL,NULL,NULL,NULL)
-,(334453,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:04:00.000',NULL,NULL,NULL,NULL)
-,(334453,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:04:00.000',NULL,NULL,NULL,NULL)
 ,(334453,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:04:00.000',NULL,NULL,NULL,NULL)
 ,(334454,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:04:00.000',NULL,NULL,NULL,NULL)
 ,(334455,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:05:00.000',NULL,NULL,NULL,NULL)
@@ -873,4 +801,7 @@ INSERT INTO tabelas.dbo.pessoas (pes_codigo,pes_categoria,pes_tipo,pes_esfera,pe
 ,(334475,0,1,0,0,0,NULL,0,0,0,'2016-11-16 15:23:00.000',NULL,NULL,NULL,NULL)
 ,(334476,0,1,0,0,0,NULL,0,0,0,'2016-11-17 10:36:00.000',NULL,NULL,NULL,NULL)
 ,(334698,0,1,0,0,0,NULL,0,0,0,'2017-06-19 09:54:00.000',NULL,NULL,NULL,NULL)
+;
+INSERT INTO Tabelas.dbo.Pessoas (pes_codigo, pes_categoria, pes_tipo, pes_esfera, pes_administracao, pes_utilidade_publica, pes_superior, pes_validade, pes_orgao_cadastrador, pes_usuario_cadastrador, pes_data_cadastramento, pes_orgao_atualizador, pes_usuario_atualizador, pes_data_atualizacao, pes_controle) VALUES
+(223448,0,1,0,0,0,NULL,0,0,0,'2017-06-19 09:54:00.000',NULL,NULL,NULL,NULL)
 ;

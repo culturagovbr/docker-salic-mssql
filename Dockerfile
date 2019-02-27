@@ -21,8 +21,8 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint-initdb.sh
 
 COPY schemas /tmp/schemas
-COPY initial-data.sql /tmp/initial-data.sql
 COPY migrate /tmp/migrate
+COPY docker-entrypoint-initdb.d /tmp/docker-entrypoint-initdb.d
 RUN chmod +x /tmp/migrate/main.py
 
 WORKDIR "/tmp/"
