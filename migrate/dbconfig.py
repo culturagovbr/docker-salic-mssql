@@ -19,3 +19,13 @@ db_config = {
         "schema": "dbo",
     }
 }
+
+db_names = [
+    'agentes.dbo',
+    'sac.dbo',
+    'tabelas.dbo',
+    'controledeacesso.dbo',
+    'BDCORPORATIVO.scCorp',
+    'bdcorporativo.scSAC',
+    'bddne.scdne'
+]

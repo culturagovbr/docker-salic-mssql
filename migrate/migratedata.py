@@ -14,6 +14,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import exc as sqlalchemyException
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.engine.reflection import Inspector
+from dbconfig import db_names
 
 class MigrateData:
 
@@ -193,17 +194,8 @@ class MigrateData:
         return True
 
     def map_database(self):
-        dbnames = [
-            'agentes.dbo',
-            'sac.dbo',
-            'tabelas.dbo',
-            'BDCORPORATIVO.scCorp',
-            'bdcorporativo.scSAC',
-            'sgcacesso.controledeacesso',
-            'bddne.scdne'
-        ]
-
-        dbinfo = {k:None for k in dbnames}
+        
+        dbinfo = {k:None for k in db_names}
 
         ### coleta dados do banco
         for line in dbnames:
@@ -224,25 +216,24 @@ class MigrateData:
             for tablename in table_names:
                 table_names[tablename] = inspector.get_foreign_keys(tablename, schema = schema)
 
-            dbinfo[dbname] = table_names
+            dbinfo["%s.%s" % (dbname, schema)] = table_names
             
         tables_by_level = [{}]
         level = 0
         interrupt = 10
         while dbinfo:
-            dbinfo, tables_by_level = check_table_level(dbinfo, tables_by_level, level)
+            dbinfo, tables_by_level = self.check_table_level(dbinfo, tables_by_level, level)
             level +=1
             if level > interrupt:
                 break
         
         fd = open('mapping-db.txt', 'w')
-        for line in tables_by_level:
-            fd.write(line)
+        fd.write(str(tables_by_level))
         file.close()
-                
+        
         print("Mapeamento finalizado.")
 
-    def check_table_level(dbinfo, tables_by_level, level):
+    def check_table_level(self, dbinfo, tables_by_level, level):
         tables_by_level.append({})
         dbs = list(dbinfo.keys())
         for db in dbs:
@@ -262,7 +253,7 @@ class MigrateData:
                             elif constraint_field['referred_table'] == str(table):
                                 check = True
                         check_tables.append(check)
-                    if False not in check_table:
+                    if False not in check_tables:
                         tables_by_level[level][table] = dbinfo[db].pop(table)
         return [dbinfo, tables_by_level]
     
