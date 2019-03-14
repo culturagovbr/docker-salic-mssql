@@ -198,7 +198,7 @@ class MigrateData:
         dbinfo = {k:None for k in db_names}
 
         ### coleta dados do banco
-        for line in dbnames:
+        for line in db_names:
             
             dbname, schema = line.split('.')
             self.db_target['dbname'] = dbname
@@ -227,12 +227,77 @@ class MigrateData:
             if level > interrupt:
                 break
         
-        fd = open('mapping-db.txt', 'w')
+            fd = open(configurations['file_mapping_name'], 'w')
         fd.write(str(tables_by_level))
         file.close()
         
         print("Mapeamento finalizado.")
 
+
+    def get_tables_by_level(self, exec_map = False):
+        try:
+            fd = open(configurations['file_mapping_name'], 'r')
+            tables_by_level = eval(fd.readfile())
+        except FileNotFoundError:
+            if (exec_map):
+                self.map_database()                
+            else: 
+                print("ATENCAO: Nao foi feito o mapeamento do banco de dados.")
+                print("Execute ./main map antes")
+                exit()
+
+    def fetch_table(self, params):
+        # 2) busca dados da tabela
+        # 2.1) busca dependências da tabela
+        # 2.2) monta pilha de importação da tabela baseada em tables_by_level
+        # 2.3) consulta todos os dados com essas condições
+        # 2.4) executa
+        
+        
+        return []
+
+    def fetch_table_relations(self, params):
+        return []
+                
+    def grab_data(self, query, options):
+        options = [i.replace('--', '') for i in options]
+        exec_map = False
+        get_related = False
+        data = {}
+        
+        if ('map' in options):
+            exec_map = True
+        if ('get_related' in options):
+            get_related = True
+
+        # 1) busca tabelas por nível
+        tables_by_level = self.get_tables_by_level(exec_map)
+        
+        table_info, condition = query.split('|')
+        dbname, schema, table = table_info.split('.')
+        params = {
+            'dbname': dbname,
+            'schema': schema,
+            'table': table,
+            'condition': condition,
+            'primarykey': primarykey
+        }
+
+        data['table_data'] = self.fetch_table(params)
+        
+        if get_related:
+            data['table_data'] = self.fetch_table_relations()
+        
+
+        
+        # migrate_data(self, params):
+        
+        # 2) busca dados da tabela
+        #table_data = get_table_data
+        
+        print(dbinfo.keys())
+            
+    
     def check_table_level(self, dbinfo, tables_by_level, level):
         tables_by_level.append({})
         dbs = list(dbinfo.keys())

@@ -9,8 +9,8 @@ configurations = {
     'bypass_constrains': True,
     'insert_chain_size': 10,
     'tables_folder': 'tables',
-    'actions': ('help', 'migrate', 'flush', 'map'),
-    'exclude_column_types': ('timestamp')
+    'exclude_column_types': ('timestamp'),
+    'file_mapping_name': 'mapping-db.txt'
 }
 
 #############################
@@ -33,12 +33,13 @@ def help_menu():
     print(" migrate [conjunto de tabelas]           Realiza tarefas de migracao descritas na pasta do conjunto de tabelas (pasta migrate/tables)")
     print(" flush [conjunto de tabelas]             Limpa registros do conjunto de tabelas especificado")
     print(" map                                     Mapeia o banco de dados e relacionamentos")
-    print(" help                                    Exibe esta tela de ajuda")    
-        
+    print(" grab [tabela|condicoes] [opcoes]        Busca todos os dados relacionados a 'tabela|id=123', entre aspas")
+    print(" help                                    Exibe esta tela de ajuda")
+    
 def show_header():
     print("""\033[32m""" + """
            oo                                                       dP oo          
-                                                                    88             
+                                                                    88
 88d8b.d8b. dP .d8888b. 88d888b. .d8888b.          .d8888b. .d8888b. 88 dP .d8888b.  """ + """\033[33m""" + """
 88'`88'`88 88 88'  `88 88'  `88 88'  `88 88888888 Y8ooooo. 88'  `88 88 88 88'  `"" 
 88  88  88 88 88.  .88 88       88.  .88                88 88.  .88 88 88 88.  ...  """ + """\033[31m""" + """
@@ -66,15 +67,37 @@ def flush(folder):
     else:
         print('Escolha um conjunto valido de tabelas para limpar! Escolha uma das abaixo:')
         display_available()
-        exit()    
+        exit()
 
 def map_database():
     migrate_data = MigrateData(db_config, configurations)
     migrate_data.map_database()
 
+def grab_data(query):
+    options_available = ('--map', '--get-related')
+    command, action, query, *options = sys.argv
+    
+    if '--' in query or '|' not in query:
+        print("Query invalida!")
+        print("Exemplo de uso:")
+        print("$ ./main.py grab 'db.schema.tabela|idTabela=123' --map --get-related")
+        exit()
+    
+    if set(options) <= set(options_available):
+        migrate_data = MigrateData(db_config, configurations)
+        migrate_data.grab_data(query,options)
+        
+    else:
+        for option in options:
+            if option not in options_available:
+                print("Comando %s nao encontrado." % (option))
+                exit()    
+    
 def main():    
     if len(sys.argv) > 1:
-        commands = ['command', 'action', 'folder']
+        actions = ('help', 'migrate', 'flush', 'map', 'grab')
+        commands = ('command', 'action', 'folder')
+
         args = dict(zip(commands, sys.argv))
     
         action = args['action']
@@ -84,7 +107,7 @@ def main():
         else:
             folder = None
         
-        if action in configurations['actions']:
+        if action in actions:
             if action == 'help':
                 show_header()
                 help_menu()
@@ -94,6 +117,8 @@ def main():
                 flush(folder)
             elif action == 'map':
                 map_database()
+            elif action == 'grab':
+                grab_data()
             else:
                 help_menu()           
         else:
