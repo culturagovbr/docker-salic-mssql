@@ -38,7 +38,6 @@ class MigrateData:
         
         self.db_source = db_config['db_source']
         self.db_target = db_config['db_target']
-        
         self.configure(configurations)
     
     def set_dsn(self):
@@ -69,13 +68,11 @@ class MigrateData:
         
         self.engine_source = create_engine(self.dsn_source)
         self.engine_target = create_engine(self.dsn_target)
-
         self.Session_source = sessionmaker(bind=self.engine_source)
         self.Session_target = sessionmaker(bind=self.engine_target)
-
         self.connection = self.engine_target.connect()
 
-        if configurations != False:
+        if configurations:
             self.configurations = configurations
 
     def error_report(self):
@@ -132,7 +129,6 @@ class MigrateData:
 
             dbname, schema = matches.groups()
             print(" ")
-           
             print("------------------------------------ ")
             print("Banco/Schema:  %s.%s " % (dbname, schema))
             print("------------------------------------ ")            
@@ -142,7 +138,6 @@ class MigrateData:
                 self.db_target['dbname'] = dbname
                 self.db_source['schema'] = schema
                 self.db_target['schema'] = schema
-                
                 self.configure()
                 
             filename = path.join(import_folder, database)
@@ -170,7 +165,7 @@ class MigrateData:
                 except IOError:
                     self.rollback()
                     
-                    print("Arquivo nao encontrado")
+                    print("Arquivo não encontrado")
 
         if any(self.errors):
             self.error_report()
@@ -197,22 +192,19 @@ class MigrateData:
         
         dbinfo = {k:None for k in db_names}
 
-        ### coleta dados do banco
         for line in db_names:
-            
             dbname, schema = line.split('.')
             self.db_target['dbname'] = dbname
             self.db_source['schema'] = schema
             self.configure()
             
             metadata = MetaData(self.engine_source, schema = schema, reflect = True)
-
             table_names = {name.split('.')[1]: None for name in metadata.tables}
-            
             inspector = Inspector.from_engine(self.engine_source)
-
+            
             print("Mapeando banco %s.%s" % (dbname, schema))
             sys.stdout.flush()
+            
             for tablename in table_names:
                 table_names[tablename] = inspector.get_foreign_keys(tablename, schema = schema)
 
@@ -232,7 +224,8 @@ class MigrateData:
         file.close()
         
         print("Mapeamento finalizado.")
-
+        
+        return True
 
     def get_tables_by_level(self, exec_map = False):
         try:
@@ -245,14 +238,15 @@ class MigrateData:
                 print("ATENCAO: Nao foi feito o mapeamento do banco de dados.")
                 print("Execute ./main map antes")
                 exit()
+        
+        return tables_by_level
 
     def fetch_table(self, params):
-        # 2) busca dados da tabela
-        # 2.1) busca dependências da tabela
-        # 2.2) monta pilha de importação da tabela baseada em tables_by_level
-        # 2.3) consulta todos os dados com essas condições
-        # 2.4) executa
-        
+        # 1) busca dados da tabela
+        # 1.1) busca dependências da tabela
+        # 1.2) monta pilha de importação da tabela baseada em tables_by_level
+        # 1.3) consulta todos os dados com essas condições
+        # 1.4) executa
         
         return []
 
@@ -270,9 +264,8 @@ class MigrateData:
         if ('get_related' in options):
             get_related = True
 
-        # 1) busca tabelas por nível
+        # 1.A) busca tabelas por nível e armazena na variavel 'data'
         tables_by_level = self.get_tables_by_level(exec_map)
-        
         table_info, condition = query.split('|')
         dbname, schema, table = table_info.split('.')
         params = {
@@ -283,17 +276,14 @@ class MigrateData:
             'primarykey': primarykey
         }
 
-        data['table_data'] = self.fetch_table(params)
+        data['main_tables'] = self.fetch_table(params)
         
+        # 1.B) caso queria, buscar tabelas relacionadas e arbazena em 'data'
         if get_related:
-            data['table_data'] = self.fetch_table_relations()
+            data['related_tables'] = self.fetch_table_relations()
         
-
-        
-        # migrate_data(self, params):
-        
-        # 2) busca dados da tabela
-        #table_data = get_table_data
+        # 2) para cada tabela, busca dados da tabela, com parâmetros
+        #migrate_data(self, params):
         
         print(dbinfo.keys())
             

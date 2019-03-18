@@ -73,9 +73,15 @@ def map_database():
     migrate_data = MigrateData(db_config, configurations)
     migrate_data.map_database()
 
-def grab_data(query):
+def grab_data():
+    if (len(sys.argv) < 3):
+        print("Exemplo de uso:")
+        print("$ ./main.py grab 'db.schema.tabela|idTabela=123' --map --get-related")
+        exit()
+    
     options_available = ('--map', '--get-related')
-    command, action, query, *options = sys.argv
+    
+    command, action, query, *options, = sys.argv
     
     if '--' in query or '|' not in query:
         print("Query invalida!")
@@ -85,7 +91,7 @@ def grab_data(query):
     
     if set(options) <= set(options_available):
         migrate_data = MigrateData(db_config, configurations)
-        migrate_data.grab_data(query,options)
+        migrate_data.grab_data(query, options)
         
     else:
         for option in options:
