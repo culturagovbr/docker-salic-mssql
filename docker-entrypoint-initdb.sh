@@ -17,8 +17,18 @@ do
   shortname=$(echo $entry | cut -f 1 -d '.' | cut -f 2 -d '/')
   echo executing $shortname
   /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE FILELISTONLY FROM DISK = "/tmp/schemas/'$shortname'.bak"' | tr -s ' ' | cut -d ' ' -f 1-2
-  /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE '$shortname' FROM DISK = "/tmp/schemas/'$shortname'.bak" WITH MOVE "'$shortname'_Est" TO "/var/opt/mssql/data/'$shortname'_Est.mdf", MOVE "'$shortname'_Est_log" TO "/var/opt/mssql/data/'$shortname'_Est_log.ldf"'
+  /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "salic@123456" -Q 'RESTORE DATABASE '$shortname' FROM DISK = "/tmp/schemas/'$shortname'.bak" WITH MOVE "'$shortname'" TO "/var/opt/mssql/data/'$shortname'.mdf", MOVE "'$shortname'_log" TO "/var/opt/mssql/data/'$shortname'_log.ldf"'
 done
+
+# echo "$0: inicializando dump da estrutura"
+# for f in schemas/*; do
+#   case "$f" in
+#     *.sql)    echo "$0: running $f"; /opt/mssql-tools/bin/sqlcmd -U SA -P "salic@123456" -i "$f"; echo ;;
+#     *)        echo "$0: ignoring $f" ;;
+#   esac
+#   echo
+# done
+# echo "$0: SQL estrutura database ok"
 
 echo "$0: inicializando dump da base"
 for f in docker-entrypoint-initdb.d/*; do
