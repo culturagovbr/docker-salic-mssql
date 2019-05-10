@@ -131,7 +131,7 @@ INSERT INTO SAC.dbo.Orgaos (Codigo,Sigla,idSecretaria,Vinculo,Status,stVinculada
 ,(325,'SPPC/GEPRO',273,0,0,0)
 ;
 INSERT INTO SAC.dbo.Orgaos (Codigo,Sigla,idSecretaria,Vinculo,Status,stVinculada) VALUES 
-(326,'SPPC/AÇÕES',273,0,0,0)
+(326,'SPPC/AÃ‡Ã•ES',273,0,0,0)
 ,(327,'SPPC/MARES',273,0,0,0)
 ,(328,'SPPC/CA',273,0,0,0)
 ,(329,'ANCINE/Diretoria',204,1,1,0)

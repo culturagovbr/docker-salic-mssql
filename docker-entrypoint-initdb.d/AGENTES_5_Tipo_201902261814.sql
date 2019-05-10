@@ -1,25 +1,31 @@
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Nome');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Endereço');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Telefone');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Internet');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Documento');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Atributo do Documento');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Direito');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Esfera');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Poder');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Administração');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Caracterista do Agente');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Tipo Logradouro');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Perfil');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Visão');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Certidão Negativa');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Lista de documentos de pessoa física');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Lista de documentos de pessoa jurídica');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Lista de documentos de pessoa física e jurídica');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Escolaridade');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Vínculo Empregatício');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Faixa Salarial');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Área de Atuação');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Nível do Parecerista');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Nome de Representante Legal');
-INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES('Cargo em Comissão');
+INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES
+('Nome')
+,('Endereço')
+,('Telefone')
+,('Internet')
+,('Documento')
+,('Atributo do Documento')
+,('Direito')
+,('Esfera')
+,('Poder')
+,('Administração')
+;
+INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES
+('Caracterista do Agente')
+,('Tipo Logradouro')
+,('Perfil')
+,('Visão')
+,('Certidão Negativa')
+,('Lista de documentos de pessoa física')
+,('Lista de documentos de pessoa jurídica')
+,('Lista de documentos de pessoa física e jurídica')
+,('Escolaridade')
+,('Vínculo Empregatício')
+;
+INSERT INTO Agentes.dbo.Tipo (Descricao) VALUES
+('Faixa Salarial')
+,('Área de Atuação')
+,('Nível do Parecerista')
+,('Nome de Representante Legal')
+,('Cargo em Comissão')
+;

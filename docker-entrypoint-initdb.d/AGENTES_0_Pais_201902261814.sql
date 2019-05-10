@@ -1,200 +1,284 @@
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(1, ' ', 'Afeganistão', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(2, ' ', 'África do Sul', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(3, ' ', 'Alasca', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(4, ' ', 'Albânia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(5, ' ', 'Alemanha', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(6, ' ', 'Andorra', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(7, ' ', 'Angola', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(8, ' ', 'Anguilla', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(9, ' ', 'Ant.Holandesas', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(10, ' ', 'Antigua', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(11, ' ', 'Arábia Saudita', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(12, ' ', 'Argélia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(13, ' ', 'Argentina', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(14, ' ', 'Armênia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(15, ' ', 'Aruba', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(16, ' ', 'Austrália', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(17, ' ', 'Áustria', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(18, ' ', 'Azerbaijão', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(19, ' ', 'Bahamas', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(20, ' ', 'Bangladesh', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(21, ' ', 'Barbados', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(22, ' ', 'Barein', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(23, ' ', 'Belarus', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(24, ' ', 'Bélgica', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(25, ' ', 'Belize', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(26, ' ', 'Benin', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(27, ' ', 'Bermudas', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(28, ' ', 'Bolívia', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(29, ' ', 'Bósnia E Herzegovina', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(30, ' ', 'Botsuana', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(31, ' ', 'Brasil', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(32, ' ', 'Brunei', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(33, ' ', 'Bulgária', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(34, ' ', 'Burkina Faso', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(35, ' ', 'Burundi', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(36, ' ', 'Butão', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(37, ' ', 'Cabo Verde', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(38, ' ', 'Camarões', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(39, ' ', 'Campuchea', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(40, ' ', 'Canadá', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(41, ' ', 'Casaquistão', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(42, ' ', 'Catar', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(43, ' ', 'Chade', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(44, ' ', 'Chile', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(45, ' ', 'China', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(46, ' ', 'Chipre', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(47, ' ', 'Cingapura', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(48, ' ', 'Colômbia', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(49, ' ', 'Comores', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(50, ' ', 'Congo', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(51, ' ', 'Coréia do Norte', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(52, ' ', 'Coréia do Sul', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(53, ' ', 'Costa do Marfim', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(54, ' ', 'Costa Rica', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(55, ' ', 'Croácia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(56, ' ', 'Cuba', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(57, ' ', 'Diego Garcia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(58, ' ', 'Dinamarca', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(59, ' ', 'Djibuti', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(60, ' ', 'Dominica', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(61, ' ', 'Egito', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(62, ' ', 'El Salvador', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(63, ' ', 'Emirados A. Unidos', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(64, ' ', 'Equador', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(65, ' ', 'Eritréa', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(66, ' ', 'Eslovênia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(67, ' ', 'Espanha', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(68, ' ', 'Estados Unidos', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(69, ' ', 'Estônia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(70, ' ', 'Etiópia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(71, ' ', 'Fiji', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(72, ' ', 'Filipinas', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(73, ' ', 'Finlândia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(74, ' ', 'Formosa', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(75, ' ', 'França', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(76, ' ', 'Gabão', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(77, ' ', 'Gâmbia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(78, ' ', 'Gana', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(79, ' ', 'Geórgia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(80, ' ', 'Gibraltar', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(81, ' ', 'Granada', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(82, ' ', 'Grécia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(83, ' ', 'Groelândia', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(84, ' ', 'Guadalupe', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(85, ' ', 'Guam', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(86, ' ', 'Guatemala', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(87, ' ', 'Guiana', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(88, ' ', 'Guiana Francesa', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(89, ' ', 'Guiné', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(90, ' ', 'Guiné Equatorial', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(91, ' ', 'Guiné-Bissau', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(92, ' ', 'Haiti', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(93, ' ', 'Havaí', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(94, ' ', 'Holanda', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(95, ' ', 'Honduras', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(96, ' ', 'Hong Kong', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(97, ' ', 'Hungria', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(98, ' ', 'Ilhas Ascensão', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(99, ' ', 'Ilhas Caicos', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(100, ' ', 'Ilhas Cayman', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(101, ' ', 'Ilhas Cook', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(102, ' ', 'Ilhas Faroe', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(103, ' ', 'Ilhas Malvinas', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(104, ' ', 'Ilhas Marianas Norte', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(105, ' ', 'Ilhas Marshall', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(106, ' ', 'Ilhas Mayotte', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(107, ' ', 'Ilhas Midway', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(108, ' ', 'Ilhas Norfolk', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(109, ' ', 'Ilhas Reunião', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(110, ' ', 'Ilhas Rodrigues', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(111, ' ', 'Ilhas Salomão', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(112, ' ', 'Ilhas Santa Helena', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(113, ' ', 'Ilhas Virgens', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(114, ' ', 'Ilhas Wake', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(115, ' ', 'Índia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(116, ' ', 'Indonésia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(117, ' ', 'Irã', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(118, ' ', 'Iraque', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(119, ' ', 'Irlanda', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(120, ' ', 'Islândia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(121, ' ', 'Israel', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(122, ' ', 'Itália', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(123, ' ', 'Iugoslávia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(124, ' ', 'Jamaica', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(125, ' ', 'Japão', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(126, ' ', 'Jordânia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(127, ' ', 'Kiribati', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(128, ' ', 'Kuwait', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(129, ' ', 'Laos', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(130, ' ', 'Lesoto', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(131, ' ', 'Letônia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(132, ' ', 'Líbano', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(133, ' ', 'Libéria', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(134, ' ', 'Líbia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(135, ' ', 'Liechtenstein', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(136, ' ', 'Lituânia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(137, ' ', 'Luxemburgo', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(138, ' ', 'Macau', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(139, ' ', 'Macedônia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(140, ' ', 'Madagascar', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(141, ' ', 'Malásia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(142, ' ', 'Malavi', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(143, ' ', 'Maldivas', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(144, ' ', 'Mali', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(145, ' ', 'Malta', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(146, ' ', 'Marrocos', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(147, ' ', 'Martiníca', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(148, ' ', 'Maurício', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(149, ' ', 'Mauritânia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(150, ' ', 'México', 'América do Norte');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(151, ' ', 'Micronésia', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(152, ' ', 'Moçambique', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(153, ' ', 'Moldova', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(154, ' ', 'Mongólia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(155, ' ', 'Montserrat', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(156, ' ', 'Namíbia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(157, ' ', 'Nauru', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(158, ' ', 'Nepal', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(159, ' ', 'Nicarágua', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(160, ' ', 'Niger', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(161, ' ', 'Nigéria', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(162, ' ', 'Niue', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(163, ' ', 'Noruega', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(164, ' ', 'Nova Caledônia', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(165, ' ', 'Nova Zelândia', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(166, ' ', 'Omã', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(167, ' ', 'Palau', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(168, ' ', 'Palestina', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(169, ' ', 'Panamá', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(170, ' ', 'Papua Nova Guiné', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(171, ' ', 'Paquistão', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(172, ' ', 'Paraguai', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(173, ' ', 'Peru', 'América do Sul');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(174, ' ', 'Polônia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(175, ' ', 'Porto Rico', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(176, ' ', 'Portugal', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(177, ' ', 'Principado Mônaco', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(178, ' ', 'Quênia', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(179, ' ', 'Quirguizia', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(180, ' ', 'Reino Unido', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(181, ' ', 'Rep. Centro Africana', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(182, ' ', 'Rep. Eslováquia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(183, ' ', 'Rep. Tcheca', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(184, ' ', 'República do Iemen', 'Ásia');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(185, ' ', 'República Dominicana', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(186, ' ', 'Romênia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(187, ' ', 'Ruanda', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(188, ' ', 'Rússia', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(189, ' ', 'S.Kitts e Nevis', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(190, ' ', 'S.Vicente Ilhas', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(191, ' ', 'Saara Espanhol', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(192, ' ', 'Samoa', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(193, ' ', 'Samoa Americana', 'Oceania');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(194, ' ', 'Santa Lucia', 'América Central');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(195, ' ', 'São Marino', 'Europa');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(196, ' ', 'São Tomé e Principe', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(197, ' ', 'Senegal', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(198, ' ', 'Serra Leoa', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(199, ' ', 'Seychelles', 'África');
-INSERT INTO Agentes.dbo.Pais (idPais, Sigla, Descricao, Continente) VALUES(200, ' ', 'Síria', 'Ásia');
+﻿INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(1,' ','Afeganistão','Ásia')
+,(2,' ','África do Sul','África')
+,(3,' ','Alasca','América do Norte')
+,(4,' ','Albânia','Europa')
+,(5,' ','Alemanha','Europa')
+,(6,' ','Andorra','Europa')
+,(7,' ','Angola','África')
+,(8,' ','Anguilla','América Central')
+,(9,' ','Ant.Holandesas','América Central')
+,(10,' ','Antigua','América Central')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(11,' ','Arábia Saudita','Ásia')
+,(12,' ','Argélia','África')
+,(13,' ','Argentina','América do Sul')
+,(14,' ','Armênia','Europa')
+,(15,' ','Aruba','América Central')
+,(16,' ','Austrália','Oceania')
+,(17,' ','Áustria','Europa')
+,(18,' ','Azerbaijão','Europa')
+,(19,' ','Bahamas','América Central')
+,(20,' ','Bangladesh','Ásia')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(21,' ','Barbados','América Central')
+,(22,' ','Barein','Ásia')
+,(23,' ','Belarus','Europa')
+,(24,' ','Bélgica','Europa')
+,(25,' ','Belize','América Central')
+,(26,' ','Benin','África')
+,(27,' ','Bermudas','América do Norte')
+,(28,' ','Bolívia','América do Sul')
+,(29,' ','Bósnia E Herzegovina','Europa')
+,(30,' ','Botsuana','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(31,' ','Brasil','América do Sul')
+,(32,' ','Brunei','Ásia')
+,(33,' ','Bulgária','Europa')
+,(34,' ','Burkina Faso','África')
+,(35,' ','Burundi','África')
+,(36,' ','Butão','Ásia')
+,(37,' ','Cabo Verde','África')
+,(38,' ','Camarões','África')
+,(39,' ','Campuchea','Ásia')
+,(40,' ','Canadá','América do Norte')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(41,' ','Casaquistão','Ásia')
+,(42,' ','Catar','Ásia')
+,(43,' ','Chade','África')
+,(44,' ','Chile','América do Sul')
+,(45,' ','China','Ásia')
+,(46,' ','Chipre','Europa')
+,(47,' ','Cingapura','Ásia')
+,(48,' ','Colômbia','América do Sul')
+,(49,' ','Comores','África')
+,(50,' ','Congo','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(51,' ','Coréia do Norte','Ásia')
+,(52,' ','Coréia do Sul','Ásia')
+,(53,' ','Costa do Marfim','África')
+,(54,' ','Costa Rica','América Central')
+,(55,' ','Croácia','Europa')
+,(56,' ','Cuba','América Central')
+,(57,' ','Diego Garcia','Ásia')
+,(58,' ','Dinamarca','Europa')
+,(59,' ','Djibuti','África')
+,(60,' ','Dominica','América Central')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(61,' ','Egito','África')
+,(62,' ','El Salvador','América Central')
+,(63,' ','Emirados A. Unidos','Ásia')
+,(64,' ','Equador','América do Sul')
+,(65,' ','Eritréa','África')
+,(66,' ','Eslovênia','Europa')
+,(67,' ','Espanha','Europa')
+,(68,' ','Estados Unidos','América do Norte')
+,(69,' ','Estônia','Europa')
+,(70,' ','Etiópia','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(71,' ','Fiji','Oceania')
+,(72,' ','Filipinas','Ásia')
+,(73,' ','Finlândia','Europa')
+,(74,' ','Formosa','Ásia')
+,(75,' ','França','Europa')
+,(76,' ','Gabão','África')
+,(77,' ','Gâmbia','África')
+,(78,' ','Gana','África')
+,(79,' ','Geórgia','Europa')
+,(80,' ','Gibraltar','Europa')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(81,' ','Granada','América Central')
+,(82,' ','Grécia','Europa')
+,(83,' ','Groelândia','América do Norte')
+,(84,' ','Guadalupe','América Central')
+,(85,' ','Guam','Oceania')
+,(86,' ','Guatemala','América Central')
+,(87,' ','Guiana','América do Sul')
+,(88,' ','Guiana Francesa','América do Sul')
+,(89,' ','Guiné','África')
+,(90,' ','Guiné Equatorial','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(91,' ','Guiné-Bissau','África')
+,(92,' ','Haiti','América Central')
+,(93,' ','Havaí','América do Norte')
+,(94,' ','Holanda','Europa')
+,(95,' ','Honduras','América Central')
+,(96,' ','Hong Kong','Ásia')
+,(97,' ','Hungria','Europa')
+,(98,' ','Ilhas Ascensão','África')
+,(99,' ','Ilhas Caicos','América Central')
+,(100,' ','Ilhas Cayman','América Central')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(101,' ','Ilhas Cook','Oceania')
+,(102,' ','Ilhas Faroe','Europa')
+,(103,' ','Ilhas Malvinas','América do Sul')
+,(104,' ','Ilhas Marianas Norte','Oceania')
+,(105,' ','Ilhas Marshall','Oceania')
+,(106,' ','Ilhas Mayotte','África')
+,(107,' ','Ilhas Midway','América do Norte')
+,(108,' ','Ilhas Norfolk','Oceania')
+,(109,' ','Ilhas Reunião','África')
+,(110,' ','Ilhas Rodrigues','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(111,' ','Ilhas Salomão','Oceania')
+,(112,' ','Ilhas Santa Helena','África')
+,(113,' ','Ilhas Virgens','América Central')
+,(114,' ','Ilhas Wake','Oceania')
+,(115,' ','Índia','Ásia')
+,(116,' ','Indonésia','Ásia')
+,(117,' ','Irã','Ásia')
+,(118,' ','Iraque','Ásia')
+,(119,' ','Irlanda','Europa')
+,(120,' ','Islândia','Europa')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(121,' ','Israel','Ásia')
+,(122,' ','Itália','Europa')
+,(123,' ','Iugoslávia','Europa')
+,(124,' ','Jamaica','América Central')
+,(125,' ','Japão','Ásia')
+,(126,' ','Jordânia','Ásia')
+,(127,' ','Kiribati','Oceania')
+,(128,' ','Kuwait','Ásia')
+,(129,' ','Laos','Ásia')
+,(130,' ','Lesoto','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(131,' ','Letônia','Europa')
+,(132,' ','Líbano','Ásia')
+,(133,' ','Libéria','África')
+,(134,' ','Líbia','África')
+,(135,' ','Liechtenstein','Europa')
+,(136,' ','Lituânia','Europa')
+,(137,' ','Luxemburgo','Europa')
+,(138,' ','Macau','Ásia')
+,(139,' ','Macedônia','Europa')
+,(140,' ','Madagascar','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(141,' ','Malásia','Ásia')
+,(142,' ','Malavi','África')
+,(143,' ','Maldivas','Ásia')
+,(144,' ','Mali','África')
+,(145,' ','Malta','Europa')
+,(146,' ','Marrocos','África')
+,(147,' ','Martiníca','América Central')
+,(148,' ','Maurício','África')
+,(149,' ','Mauritânia','África')
+,(150,' ','México','América do Norte')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(151,' ','Micronésia','Oceania')
+,(152,' ','Moçambique','África')
+,(153,' ','Moldova','Europa')
+,(154,' ','Mongólia','Ásia')
+,(155,' ','Montserrat','América Central')
+,(156,' ','Namíbia','África')
+,(157,' ','Nauru','Oceania')
+,(158,' ','Nepal','Ásia')
+,(159,' ','Nicarágua','América Central')
+,(160,' ','Niger','África')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(161,' ','Nigéria','África')
+,(162,' ','Niue','Oceania')
+,(163,' ','Noruega','Europa')
+,(164,' ','Nova Caledônia','Oceania')
+,(165,' ','Nova Zelândia','Oceania')
+,(166,' ','Omã','Ásia')
+,(167,' ','Palau','Oceania')
+,(168,' ','Palestina','Ásia')
+,(169,' ','Panamá','América Central')
+,(170,' ','Papua Nova Guiné','Oceania')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(171,' ','Paquistão','Ásia')
+,(172,' ','Paraguai','América do Sul')
+,(173,' ','Peru','América do Sul')
+,(174,' ','Polônia','Europa')
+,(175,' ','Porto Rico','América Central')
+,(176,' ','Portugal','Europa')
+,(177,' ','Principado Mônaco','Europa')
+,(178,' ','Quênia','África')
+,(179,' ','Quirguizia','Ásia')
+,(180,' ','Reino Unido','Europa')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(181,' ','Rep. Centro Africana','África')
+,(182,' ','Rep. Eslováquia','Europa')
+,(183,' ','Rep. Tcheca','Europa')
+,(184,' ','República do Iemen','Ásia')
+,(185,' ','República Dominicana','América Central')
+,(186,' ','Romênia','Europa')
+,(187,' ','Ruanda','África')
+,(188,' ','Rússia','Europa')
+,(189,' ','S.Kitts e Nevis','América Central')
+,(190,' ','S.Vicente Ilhas','América Central')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(191,' ','Saara Espanhol','África')
+,(192,' ','Samoa','Oceania')
+,(193,' ','Samoa Americana','Oceania')
+,(194,' ','Santa Lucia','América Central')
+,(195,' ','São Marino','Europa')
+,(196,' ','São Tomé e Principe','África')
+,(197,' ','Senegal','África')
+,(198,' ','Serra Leoa','África')
+,(199,' ','Seychelles','África')
+,(200,' ','Síria','Ásia')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(201,' ','Somália','África')
+,(202,' ','Sri-Lanka','Ásia')
+,(203,' ','St.Pierre e Miquelon','Ámerica do Norte')
+,(204,' ','Suazilândia','África')
+,(205,' ','Sudão','África')
+,(206,' ','Suécia','Europa')
+,(207,' ','Suíça','Europa')
+,(208,' ','Suriname','América do Sul')
+,(209,' ','Tadjiquistão','Ásia')
+,(210,' ','Tailândia','Ásia')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(211,' ','Taiti','Oceania')
+,(212,' ','Tanzânia','África')
+,(213,' ','Territ. ext. Austrália','Oceania')
+,(214,' ','Timor Leste','Oceania')
+,(215,' ','Togo','África')
+,(216,' ','Tonga','Oceania')
+,(217,' ','Toquelau','Oceania')
+,(218,' ','Trinidad e Tobago','América Central')
+,(219,' ','Tunísia','África')
+,(220,' ','Turcomenia','Ásia')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(221,' ','Turquia','Europa')
+,(222,' ','Tuvalu','Oceania')
+,(223,' ','Ucrânia','Europa')
+,(224,' ','Uganda','África')
+,(225,' ','União de Myanmar','Ásia')
+,(226,' ','Uruguai','América do Sul')
+,(227,' ','Uzbequistão','Ásia')
+,(228,' ','Vanuatu','Oceania')
+,(229,' ','Venezuela','América do Sul')
+,(230,' ','Vietnã','Ásia')
+;
+INSERT INTO Agentes.dbo.Pais (idPais,Sigla,Descricao,Continente) VALUES
+(231,' ','Ilhas Virgens Britânicas','Europa')
+,(232,' ','Wallis e Futuna','Oceania')
+,(233,' ','Zaire','África')
+,(234,' ','Zâmbia','África')
+,(235,' ','Zanzibar','África')
+,(236,' ','Zimbábue','África')
+;

@@ -1,5 +1,5 @@
 INSERT INTO SAC.dbo.tbPlanilhaUnidade (Sigla,Descricao) VALUES 
-('Não','Não Informado')
+('NÃ£o','NÃ£o Informado')
 ,('Obra','Obra')
 ,('Sem','Semana')
 ,('FL','Folha')
@@ -8,24 +8,24 @@ INSERT INTO SAC.dbo.tbPlanilhaUnidade (Sigla,Descricao) VALUES
 ,('Unid','Unidade')
 ,('H','Hora')
 ,('M','Metro')
-,('per','Período')
+,('per','PerÃ­odo')
 ;
 INSERT INTO SAC.dbo.tbPlanilhaUnidade (Sigla,Descricao) VALUES 
 ('filme','Filme')
 ,('min','Minuto')
 ,('parte','Parte')
-,('serviç','Serviço')
+,('serviÃ§','ServiÃ§o')
 ,('projet','Projeto')
 ,('m2','Metro 2')
 ,('m3','Metro 3')
 ,('m3/Km','Metro 3 / Km')
-,('instal','Instalação')
+,('instal','InstalaÃ§Ã£o')
 ,('Kg','Kilograma')
 ;
 INSERT INTO SAC.dbo.tbPlanilhaUnidade (Sigla,Descricao) VALUES 
 ('Vb','Verba')
 ,('Kg/m2','Kilograma / metro 2')
-,('mes','Mês')
-,('tit','Títulos')
-,('CH','Cachê')
+,('mes','MÃªs')
+,('tit','TÃ­tulos')
+,('CH','CachÃª')
 ;

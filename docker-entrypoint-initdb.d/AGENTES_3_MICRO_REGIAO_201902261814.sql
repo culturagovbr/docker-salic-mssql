@@ -1,200 +1,670 @@
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11001', 'Porto Velho');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11002', 'Guajará-Mirim');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11003', 'Ariquemes');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11004', 'Ji-Paraná');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11005', 'Alvorada D''Oeste');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11006', 'Cacoal');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11007', 'Vilhena');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('11008', 'Colorado do Oeste');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('12001', 'Cruzeiro do Sul');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('12002', 'Tarauacá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('12003', 'Sena Madureira');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('12004', 'Rio Branco');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('12005', 'Brasiléia');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13001', 'Rio Negro');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13002', 'Japurá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13003', 'Alto Solimões');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13004', 'Juruá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13005', 'Tefé');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13006', 'Coari');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13007', 'Manaus');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13008', 'Rio Preto da Eva');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13009', 'Itacoatiara');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13010', 'Parintins');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13011', 'Boca do Acre');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13012', 'Purus');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('13013', 'Madeira');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('14001', 'Boa Vista');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('14002', 'Nordeste de Roraima');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('14003', 'Caracaraí');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('14004', 'Sudeste de Roraima');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15001', 'Óbidos');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15002', 'Santarém');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15003', 'Almeirim');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15004', 'Portel');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15005', 'Furos de Breves');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15006', 'Arari');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15007', 'Belém');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15008', 'Castanhal');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15009', 'Salgado');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15010', 'Bragantina');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15011', 'Cametá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15012', 'Tomé-Açu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15013', 'Guamá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15014', 'Itaituba');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15015', 'Altamira');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15016', 'Tucuruí');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15017', 'Paragominas');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15018', 'São Félix do Xingu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15019', 'Parauapebas');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15020', 'Marabá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15021', 'Redenção');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('15022', 'Conceição do Araguaia');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('16001', 'Oiapoque');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('16002', 'Amapá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('16003', 'Macapá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('16004', 'Mazagão');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17001', 'Bico do Papagaio');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17002', 'Araguaína');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17003', 'Miracema do Tocantins');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17004', 'Rio Formoso');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17005', 'Gurupi');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17006', 'Porto Nacional');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17007', 'Jalapão');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('17008', 'Dianópolis');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21001', 'Litoral Ocidental Maranhense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21002', 'Aglomeração Urbana de São Luís');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21003', 'Rosário');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21004', 'Lençois Maranhenses');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21005', 'Baixada Maranhense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21006', 'Itapecuru Mirim');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21007', 'Gurupi');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21008', 'Pindaré');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21009', 'Imperatriz');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21010', 'Médio Mearim');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21011', 'Alto Mearim e Grajaú');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21012', 'Presidente Dutra');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21013', 'Baixo Parnaíba Maranhense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21014', 'Chapadinha');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21015', 'Codó');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21016', 'Coelho Neto');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21017', 'Caxias');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21018', 'Chapadas do Alto Itapecuru');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21019', 'Porto Franco');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21020', 'Gerais de Balsas');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('21021', 'Chapadas das Mangabeiras');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22001', 'Baixo Parnaíba Piauiense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22002', 'Litoral Piauiense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22003', 'Teresina');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22004', 'Campo Maior');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22005', 'Médio Parnaíba Piauiense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22006', 'Valença do Piauí');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22007', 'Alto Parnaíba Piauiense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22008', 'Bertolínia');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22009', 'Floriano');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22010', 'Alto Médio Gurguéia');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22011', 'São Raimundo Nonato');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22012', 'Chapadas do Extremo Sul Piauiense');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22013', 'Picos');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22014', 'Pio IX');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('22015', 'Alto Médio Canindé');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23001', 'Litoral de Camocim e Acaraú');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23002', 'Ibiapaba');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23003', 'Coreaú');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23004', 'Meruoca');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23005', 'Sobral');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23006', 'Ipu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23007', 'Santa Quitéria');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23008', 'Itapipoca');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23009', 'Baixo Curu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23010', 'Uruburetama');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23011', 'Médio Curu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23012', 'Canindé');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23013', 'Baturité');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23014', 'Chorozinho');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23015', 'Cascavel');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23016', 'Fortaleza');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23017', 'Pacajus');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23018', 'Sertão de Cratéus');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23019', 'Sertão de Quixeramobim');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23020', 'Sertão de Inhamuns');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23021', 'Sertão de Senador Pompeu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23022', 'Litoral de Aracati');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23023', 'Baixo Jaguaribe');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23024', 'Médio Jaguaribe');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23025', 'Serra do Pereiro');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23026', 'Iguatu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23027', 'Várzea Alegre');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23028', 'Lavras da Mangabeira');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23029', 'Chapada do Araripe');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23030', 'Caririaçu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23031', 'Barro');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23032', 'Cariri');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('23033', 'Brejo Santo');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24001', 'Mossoró');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24002', 'Chapada do Apodi');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24003', 'Médio Oeste');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24004', 'Vale do Açu');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24005', 'Serra de São Miguel');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24006', 'Pau dos Ferros');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24007', 'Umarizal');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24008', 'Macau');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24009', 'Angicos');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24010', 'Serra de Santana');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24011', 'Seridó Ocidental');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24012', 'Seridó Oriental');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24013', 'Baixa Verde');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24014', 'Borborema Potiguar');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24015', 'Agreste Potiguar');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24016', 'Litoral Nordeste');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24017', 'Macaíba');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24018', 'Natal');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('24019', 'Litoral Sul');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25001', 'Catolé do Rocha');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25002', 'Cajazeiras');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25003', 'Sousa');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25004', 'Patos');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25005', 'Piancó');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25006', 'Itaporanga');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25007', 'Serra do Teixeira');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25008', 'Seridó Ocidental Paraibano');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25009', 'Seridó Oriental Paraibano');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25010', 'Cariri Ocidental');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25011', 'Cariri Oriental');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25012', 'Curimataú Ocidental');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25013', 'Curimataú Oriental');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25014', 'Esperança');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25015', 'Brejo Paraibano');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25016', 'Guarabira');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25017', 'Campina Grande');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25018', 'Itabaiana');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25019', 'Umbuzeiro');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25020', 'Litoral Norte');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25021', 'Sapé');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25022', 'João Pessoa');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('25023', 'Litoral Sul');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26001', 'Araripina');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26002', 'Salgueiro');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26003', 'Pajeú');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26004', 'Sertão do Moxotó');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26005', 'Petrolina');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26006', 'Itaparica');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26007', 'Vale do Ipanema');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26008', 'Vale do Ipojuca');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26009', 'Alto Capibaribe');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26010', 'Médio Capibaribe');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26011', 'Garanhuns');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26012', 'Brejo Pernambucano');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26013', 'Mata Setentrional Pernambucana');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26014', 'Vitória de Santo Antão');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26015', 'Mata Meridional Pernambucana');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26016', 'Itamaracá');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26017', 'Recife');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26018', 'Suape');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('26019', 'Fernando de Noronha');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('27001', 'Serrana do Sertão Alagoano');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('27002', 'Alagoana do Sertão do São Francisco');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('27003', 'Santana do Ipanema');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('27004', 'Batalha');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('27005', 'Palmeira dos Índios');
-INSERT INTO Agentes.dbo.MicroRegiao (idMicro, descricao) VALUES('27006', 'Arapiraca');
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('11001','Porto Velho')
+,('11002','Guajará-Mirim')
+,('11003','Ariquemes')
+,('11004','Ji-Paraná')
+,('11005','Alvorada D''Oeste')
+,('11006','Cacoal')
+,('11007','Vilhena')
+,('11008','Colorado do Oeste')
+,('12001','Cruzeiro do Sul')
+,('12002','Tarauacá')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('12003','Sena Madureira')
+,('12004','Rio Branco')
+,('12005','Brasiléia')
+,('13001','Rio Negro')
+,('13002','Japurá')
+,('13003','Alto Solimões')
+,('13004','Juruá')
+,('13005','Tefé')
+,('13006','Coari')
+,('13007','Manaus')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('13008','Rio Preto da Eva')
+,('13009','Itacoatiara')
+,('13010','Parintins')
+,('13011','Boca do Acre')
+,('13012','Purus')
+,('13013','Madeira')
+,('14001','Boa Vista')
+,('14002','Nordeste de Roraima')
+,('14003','Caracaraí')
+,('14004','Sudeste de Roraima')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('15001','Óbidos')
+,('15002','Santarém')
+,('15003','Almeirim')
+,('15004','Portel')
+,('15005','Furos de Breves')
+,('15006','Arari')
+,('15007','Belém')
+,('15008','Castanhal')
+,('15009','Salgado')
+,('15010','Bragantina')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('15011','Cametá')
+,('15012','Tomé-Açu')
+,('15013','Guamá')
+,('15014','Itaituba')
+,('15015','Altamira')
+,('15016','Tucuruí')
+,('15017','Paragominas')
+,('15018','São Félix do Xingu')
+,('15019','Parauapebas')
+,('15020','Marabá')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('15021','Redenção')
+,('15022','Conceição do Araguaia')
+,('16001','Oiapoque')
+,('16002','Amapá')
+,('16003','Macapá')
+,('16004','Mazagão')
+,('17001','Bico do Papagaio')
+,('17002','Araguaína')
+,('17003','Miracema do Tocantins')
+,('17004','Rio Formoso')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('17005','Gurupi')
+,('17006','Porto Nacional')
+,('17007','Jalapão')
+,('17008','Dianópolis')
+,('21001','Litoral Ocidental Maranhense')
+,('21002','Aglomeração Urbana de São Luís')
+,('21003','Rosário')
+,('21004','Lençois Maranhenses')
+,('21005','Baixada Maranhense')
+,('21006','Itapecuru Mirim')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('21007','Gurupi')
+,('21008','Pindaré')
+,('21009','Imperatriz')
+,('21010','Médio Mearim')
+,('21011','Alto Mearim e Grajaú')
+,('21012','Presidente Dutra')
+,('21013','Baixo Parnaíba Maranhense')
+,('21014','Chapadinha')
+,('21015','Codó')
+,('21016','Coelho Neto')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('21017','Caxias')
+,('21018','Chapadas do Alto Itapecuru')
+,('21019','Porto Franco')
+,('21020','Gerais de Balsas')
+,('21021','Chapadas das Mangabeiras')
+,('22001','Baixo Parnaíba Piauiense')
+,('22002','Litoral Piauiense')
+,('22003','Teresina')
+,('22004','Campo Maior')
+,('22005','Médio Parnaíba Piauiense')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('22006','Valença do Piauí')
+,('22007','Alto Parnaíba Piauiense')
+,('22008','Bertolínia')
+,('22009','Floriano')
+,('22010','Alto Médio Gurguéia')
+,('22011','São Raimundo Nonato')
+,('22012','Chapadas do Extremo Sul Piauiense')
+,('22013','Picos')
+,('22014','Pio IX')
+,('22015','Alto Médio Canindé')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('23001','Litoral de Camocim e Acaraú')
+,('23002','Ibiapaba')
+,('23003','Coreaú')
+,('23004','Meruoca')
+,('23005','Sobral')
+,('23006','Ipu')
+,('23007','Santa Quitéria')
+,('23008','Itapipoca')
+,('23009','Baixo Curu')
+,('23010','Uruburetama')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('23011','Médio Curu')
+,('23012','Canindé')
+,('23013','Baturité')
+,('23014','Chorozinho')
+,('23015','Cascavel')
+,('23016','Fortaleza')
+,('23017','Pacajus')
+,('23018','Sertão de Cratéus')
+,('23019','Sertão de Quixeramobim')
+,('23020','Sertão de Inhamuns')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('23021','Sertão de Senador Pompeu')
+,('23022','Litoral de Aracati')
+,('23023','Baixo Jaguaribe')
+,('23024','Médio Jaguaribe')
+,('23025','Serra do Pereiro')
+,('23026','Iguatu')
+,('23027','Várzea Alegre')
+,('23028','Lavras da Mangabeira')
+,('23029','Chapada do Araripe')
+,('23030','Caririaçu')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('23031','Barro')
+,('23032','Cariri')
+,('23033','Brejo Santo')
+,('24001','Mossoró')
+,('24002','Chapada do Apodi')
+,('24003','Médio Oeste')
+,('24004','Vale do Açu')
+,('24005','Serra de São Miguel')
+,('24006','Pau dos Ferros')
+,('24007','Umarizal')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('24008','Macau')
+,('24009','Angicos')
+,('24010','Serra de Santana')
+,('24011','Seridó Ocidental')
+,('24012','Seridó Oriental')
+,('24013','Baixa Verde')
+,('24014','Borborema Potiguar')
+,('24015','Agreste Potiguar')
+,('24016','Litoral Nordeste')
+,('24017','Macaíba')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('24018','Natal')
+,('24019','Litoral Sul')
+,('25001','Catolé do Rocha')
+,('25002','Cajazeiras')
+,('25003','Sousa')
+,('25004','Patos')
+,('25005','Piancó')
+,('25006','Itaporanga')
+,('25007','Serra do Teixeira')
+,('25008','Seridó Ocidental Paraibano')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('25009','Seridó Oriental Paraibano')
+,('25010','Cariri Ocidental')
+,('25011','Cariri Oriental')
+,('25012','Curimataú Ocidental')
+,('25013','Curimataú Oriental')
+,('25014','Esperança')
+,('25015','Brejo Paraibano')
+,('25016','Guarabira')
+,('25017','Campina Grande')
+,('25018','Itabaiana')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('25019','Umbuzeiro')
+,('25020','Litoral Norte')
+,('25021','Sapé')
+,('25022','João Pessoa')
+,('25023','Litoral Sul')
+,('26001','Araripina')
+,('26002','Salgueiro')
+,('26003','Pajeú')
+,('26004','Sertão do Moxotó')
+,('26005','Petrolina')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('26006','Itaparica')
+,('26007','Vale do Ipanema')
+,('26008','Vale do Ipojuca')
+,('26009','Alto Capibaribe')
+,('26010','Médio Capibaribe')
+,('26011','Garanhuns')
+,('26012','Brejo Pernambucano')
+,('26013','Mata Setentrional Pernambucana')
+,('26014','Vitória de Santo Antão')
+,('26015','Mata Meridional Pernambucana')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('26016','Itamaracá')
+,('26017','Recife')
+,('26018','Suape')
+,('26019','Fernando de Noronha')
+,('27001','Serrana do Sertão Alagoano')
+,('27002','Alagoana do Sertão do São Francisco')
+,('27003','Santana do Ipanema')
+,('27004','Batalha')
+,('27005','Palmeira dos Índios')
+,('27006','Arapiraca')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('27007','Traipu')
+,('27008','Serrana dos Quilombos')
+,('27009','Mata Alagoana')
+,('27010','Litoral Norte Alagoano')
+,('27011','Maceió')
+,('27012','São Miguel dos Campos')
+,('27013','Penedo')
+,('28001','Sergipana do Sertão do São Francisco')
+,('28002','Carira')
+,('28003','Nossa Senhora das Dores')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('28004','Agreste de Itabaiana')
+,('28005','Tobias Barreto')
+,('28006','Agreste de Lagarto')
+,('28007','Propriá')
+,('28008','Cotinguiba')
+,('28009','Japaratuba')
+,('28010','Baixo Cotinguiba')
+,('28011','Aracaju')
+,('28012','Boquim')
+,('28013','Estância')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('29001','Barreiras')
+,('29002','Cotegipe')
+,('29003','Santa Maria da Vitória')
+,('29004','Juazeiro')
+,('29005','Paulo Afonso')
+,('29006','Barra')
+,('29007','Bom Jesus da Lapa')
+,('29008','Senhor do Bonfim')
+,('29009','Irecê')
+,('29010','Jacobina')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('29011','Itaberaba')
+,('29012','Feira de Santana')
+,('29013','Jeremoabo')
+,('29014','Euclides da Cunha')
+,('29015','Ribeira do Pombal')
+,('29016','Serrinha')
+,('29017','Alagoinhas')
+,('29018','Entre Rios')
+,('29019','Catu')
+,('29020','Santo Antônio de Jesus')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('29021','Salvador')
+,('29022','Boquira')
+,('29023','Seabra')
+,('29024','Jequié')
+,('29025','Livramento do Brumado')
+,('29026','Guanambi')
+,('29027','Brumado')
+,('29028','Vitória da Conquista')
+,('29029','Itapetinga')
+,('29030','Valença')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('29031','Ilhéus-Itabuna')
+,('29032','Porto Seguro')
+,('31001','Unaí')
+,('31002','Paracatu')
+,('31003','Januária')
+,('31004','Janaúba')
+,('31005','Salinas')
+,('31006','Pirapora')
+,('31007','Montes Claros')
+,('31008','Grão Mogol')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('31009','Bocaiúva')
+,('31010','Diamantina')
+,('31011','Capelinha')
+,('31012','Araçuaí')
+,('31013','Pedra Azul')
+,('31014','Almenara')
+,('31015','Teófilo Otoni')
+,('31016','Nanuque')
+,('31017','Ituiutaba')
+,('31018','Uberlândia')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('31019','Patrocínio')
+,('31020','Patos de Minas')
+,('31021','Frutal')
+,('31022','Uberaba')
+,('31023','Araxá')
+,('31024','Três Marias')
+,('31025','Curvelo')
+,('31026','Bom Despacho')
+,('31027','Sete Lagoas')
+,('31028','Conceição do Mato Dentro')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('31029','Pará de Minas')
+,('31030','Belo Horizonte')
+,('31031','Itabira')
+,('31032','Itaguara')
+,('31033','Ouro Preto')
+,('31034','Conselheiro Lafaiete')
+,('31035','Guanhães')
+,('31036','Peçanha')
+,('31037','Governador Valadares')
+,('31038','Mantena')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('31039','Ipatinga')
+,('31040','Caratinga')
+,('31041','Aimorés')
+,('31042','Piuí')
+,('31043','Divinópolis')
+,('31044','Formiga')
+,('31045','Campo Belo')
+,('31046','Oliveira')
+,('31047','Passos')
+,('31048','São Sebastião do Paraíso')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('31049','Alfenas')
+,('31050','Varginha')
+,('31051','Poços de Caldas')
+,('31052','Pouso Alegre')
+,('31053','Santa Rita do Sapucaí')
+,('31054','São Lourenço')
+,('31055','Andrelândia')
+,('31056','Itajubá')
+,('31057','Lavras')
+,('31058','São João Del Rei')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('31059','Barbacena')
+,('31060','Ponte Nova')
+,('31061','Manhuaçu')
+,('31062','Viçosa')
+,('31063','Muriaé')
+,('31064','Ubá')
+,('31065','Juiz de Fora')
+,('31066','Cataguases')
+,('32001','Barra de São Francisco')
+,('32002','Nova Venécia')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('32003','Colatina')
+,('32004','Montanha')
+,('32005','São Mateus')
+,('32006','Linhares')
+,('32007','Afonso Cláudio')
+,('32008','Santa Teresa')
+,('32009','Vitória')
+,('32010','Guarapari')
+,('32011','Alegre')
+,('32012','Cachoeiro de Itapemirim')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('32013','Itapemirim')
+,('33001','Itaperuna')
+,('33002','Santo Antônio de Pádua')
+,('33003','Campos dos Goytacazes')
+,('33004','Macaé')
+,('33005','Três Rios')
+,('33006','Cantagalo-Cordeiro')
+,('33007','Nova Friburgo')
+,('33008','Santa Maria Madalena')
+,('33009','Bacia de São João')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('33010','Lagos')
+,('33011','Vale do Paraíba Fluminense')
+,('33012','Barra do Piraí')
+,('33013','Baía da Ilha Grande')
+,('33014','Vassouras')
+,('33015','Serrana')
+,('33016','Macacu-Caceribu')
+,('33017','Itaguaí')
+,('33018','Rio de Janeiro')
+,('35001','Jales')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35002','Fernandópolis')
+,('35003','Votuporanga')
+,('35004','São José do Rio Preto')
+,('35005','Catanduva')
+,('35006','Auriflama')
+,('35007','Nhandeara')
+,('35008','Novo Horizonte')
+,('35009','Barretos')
+,('35010','São Joaquim da Barra')
+,('35011','Ituverava')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35012','Franca')
+,('35013','Jaboticabal')
+,('35014','Ribeirão Preto')
+,('35015','Batatais')
+,('35016','Andradina')
+,('35017','Araçatuba')
+,('35018','Birigui')
+,('35019','Lins')
+,('35020','Bauru')
+,('35021','Jaú')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35022','Avaré')
+,('35023','Botucatu')
+,('35024','Araraquara')
+,('35025','São Carlos')
+,('35026','Rio Claro')
+,('35027','Limeira')
+,('35028','Piracicaba')
+,('35029','Pirassununga')
+,('35030','São João da Boa Vista')
+,('35031','Moji Mirim')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35032','Campinas')
+,('35033','Amparo')
+,('35034','Dracena')
+,('35035','Adamantina')
+,('35036','Presidente Prudente')
+,('35037','Tupã')
+,('35038','Marília')
+,('35039','Assis')
+,('35040','Ourinhos')
+,('35041','Itapeva')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35042','Itapetininga')
+,('35043','Tatuí')
+,('35044','Capão Bonito')
+,('35045','Piedade')
+,('35046','Sorocaba')
+,('35047','Jundiaí')
+,('35048','Bragança Paulista')
+,('35049','Campos do Jordão')
+,('35050','São José dos Campos')
+,('35051','Guaratinguetá')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35052','Bananal')
+,('35053','Paraibuna/Paraitinga')
+,('35054','Caraguatatuba')
+,('35055','Registro')
+,('35056','Itanhaém')
+,('35057','Osasco')
+,('35058','Franco da Rocha')
+,('35059','Guarulhos')
+,('35060','Itapecerica da Serra')
+,('35061','São Paulo')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('35062','Mogi das Cruzes')
+,('35063','Santos')
+,('41001','Paranavaí')
+,('41002','Umuarama')
+,('41003','Cianorte')
+,('41004','Goioerê')
+,('41005','Campo Mourão')
+,('41006','Astorga')
+,('41007','Porecatu')
+,('41008','Floraí')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('41009','Maringá')
+,('41010','Apucarana')
+,('41011','Londrina')
+,('41012','Faxinal')
+,('41013','Ivaiporã')
+,('41014','Assaí')
+,('41015','Cornélio Procópio')
+,('41016','Jacarezinho')
+,('41017','Ibaiti')
+,('41018','Wenceslau Braz')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('41019','Telêmaco Borba')
+,('41020','Jaguariaíva')
+,('41021','Ponta Grossa')
+,('41022','Toledo')
+,('41023','Cascavel')
+,('41024','Foz do Iguaçu')
+,('41025','Capanema')
+,('41026','Francisco Beltrão')
+,('41027','Pato Branco')
+,('41028','Pitanga')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('41029','Guarapuava')
+,('41030','Palmas')
+,('41031','Prudentópolis')
+,('41032','Irati')
+,('41033','União da Vitória')
+,('41034','São Mateus do Sul')
+,('41035','Cerro Azul')
+,('41036','Lapa')
+,('41037','Curitiba')
+,('41038','Paranaguá')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('41039','Rio Negro')
+,('42001','São Miguel do Oeste')
+,('42002','Chapecó')
+,('42003','Xanxerê')
+,('42004','Joaçaba')
+,('42005','Concórdia')
+,('42006','Canoinhas')
+,('42007','São Bento do Sul')
+,('42008','Joinville')
+,('42009','Curitibanos')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('42010','Campos de Lages')
+,('42011','Rio do Sul')
+,('42012','Blumenau')
+,('42013','Itajaí')
+,('42014','Ituporanga')
+,('42015','Tijucas')
+,('42016','Florianópolis')
+,('42017','Tabuleiro')
+,('42018','Tubarão')
+,('42019','Criciúma')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('42020','Araranguá')
+,('43001','Santa Rosa')
+,('43002','Três Passos')
+,('43003','Frederico Westphalen')
+,('43004','Erechim')
+,('43005','Sananduva')
+,('43006','Cerro Largo')
+,('43007','Santo Ângelo')
+,('43008','Ijuí')
+,('43009','Carazinho')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('43010','Passo Fundo')
+,('43011','Cruz Alta')
+,('43012','Não-Me-Toque')
+,('43013','Soledade')
+,('43014','Guaporé')
+,('43015','Vacaria')
+,('43016','Caxias do Sul')
+,('43017','Santiago')
+,('43018','Santa Maria')
+,('43019','Restinga Seca')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('43020','Santa Cruz do Sul')
+,('43021','Lajeado-Estrela')
+,('43022','Cachoeira do Sul')
+,('43023','Montenegro')
+,('43024','Gramado-Canela')
+,('43025','São Jerônimo')
+,('43026','Porto Alegre')
+,('43027','Osório')
+,('43028','Camaquã')
+,('43029','Campanha Ocidental')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('43030','Campanha Central')
+,('43031','Campanha Meridional')
+,('43032','Serras de Sudeste')
+,('43033','Pelotas')
+,('43034','Jaguarão')
+,('43035','Litoral Lagunar')
+,('50001','Baixo Pantanal')
+,('50002','Aquidauana')
+,('50003','Alto Taquari')
+,('50004','Campo Grande')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('50005','Cassilândia')
+,('50006','Paranaíba')
+,('50007','Três Lagoas')
+,('50008','Nova Andradina')
+,('50009','Bodoquena')
+,('50010','Dourados')
+,('50011','Iguatemi')
+,('51001','Aripuanã')
+,('51002','Alta Floresta')
+,('51003','Colíder')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('51004','Parecis')
+,('51005','Arinos')
+,('51006','Alto Teles Pires')
+,('51007','Sinop')
+,('51008','Paranatinga')
+,('51009','Norte Araguaia')
+,('51010','Canarana')
+,('51011','Médio Araguaia')
+,('51012','Alto Guaporé')
+,('51013','Tangará da Serra')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('51014','Jauru')
+,('51015','Alto Paraguai')
+,('51016','Rosário Oeste')
+,('51017','Cuiabá')
+,('51018','Alto Pantanal')
+,('51019','Primavera do Leste')
+,('51020','Tesouro')
+,('51021','Rondonópolis')
+,('51022','Alto Araguaia')
+,('52001','São Miguel do Araguaia')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('52002','Rio Vermelho')
+,('52003','Aragarças')
+,('52004','Porangatu')
+,('52005','Chapada dos Veadeiros')
+,('52006','Ceres')
+,('52007','Anápolis')
+,('52008','Iporá')
+,('52009','Anicuns')
+,('52010','Goiânia')
+,('52011','Vão do Paranã')
+;
+INSERT INTO Agentes.dbo.MicroRegiao (idMicro,descricao) VALUES
+('52012','Entorno de Brasília')
+,('52013','Sudoeste de Goiás')
+,('52014','Vale do Rio dos Bois')
+,('52015','Meia Ponte')
+,('52016','Pires do Rio')
+,('52017','Catalão')
+,('52018','Quirinópolis')
+,('53001','Brasília')
+;

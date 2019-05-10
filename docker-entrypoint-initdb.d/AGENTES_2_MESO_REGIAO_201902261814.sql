@@ -1,137 +1,165 @@
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1101', 'Madeira-Guaporé');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1102', 'Leste Rondoniense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1201', 'Vale do Juruá');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1202', 'Vale do Acre');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1301', 'Norte Amazonense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1302', 'Sudoeste Amazonense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1303', 'Centro Amazonense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1304', 'Sul Amazonense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1401', 'Norte de Roraima');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1402', 'Sul de Roraima');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1501', 'Baixo Amazonas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1502', 'Marajó');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1503', 'Metropolitana de Belém');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1504', 'Nordeste Paraense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1505', 'Sudoeste Paraense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1506', 'Sudeste Paraense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1601', 'Norte do Amapá');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1602', 'Sul do Amapá');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1701', 'Ocidental do Tocantins');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('1702', 'Oriental do Tocantins');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2101', 'Norte Maranhense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2102', 'Oeste Maranhense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2103', 'Centro Maranhense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2104', 'Leste Maranhense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2105', 'Sul Maranhense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2201', 'Norte Piauiense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2202', 'Centro-Norte Piauiense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2203', 'Sudoeste Piauiense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2204', 'Sudeste Piauiense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2301', 'Noroeste Cearense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2302', 'Norte Cearense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2303', 'Metropolitana de Fortaleza');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2304', 'Sertões Cearenses');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2305', 'Jaguaribe');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2306', 'Centro-Sul Cearense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2307', 'Sul Cearense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2401', 'Oeste Potiguar');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2402', 'Central Potiguar');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2403', 'Agreste Potiguar');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2404', 'Leste Potiguar');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2501', 'Sertão Paraibano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2502', 'Borborema');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2503', 'Agreste Paraibano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2504', 'Mata Paraibana');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2601', 'Sertão Pernambucano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2602', 'São Francisco Pernambucano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2603', 'Agreste Pernambucano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2604', 'Mata Pernambucana');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2605', 'Metropolitana de Recife');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2701', 'Sertão Alagoano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2702', 'Agreste Alagoano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2703', 'Leste Alagoano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2801', 'Sertão Sergipano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2802', 'Agreste Sergipano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2803', 'Leste Sergipano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2901', 'Extremo Oeste Baiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2902', 'Vale São-Franciscano da Bahia');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2903', 'Centro Norte Baiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2904', 'Nordeste Baiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2905', 'Metropolitana de Salvador');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2906', 'Centro Sul Baiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('2907', 'Sul Baiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3101', 'Noroeste de Minas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3102', 'Norte de Minas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3103', 'Jequitinhonha');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3104', 'Vale do Mucuri');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3105', 'Triângulo Mineiro/Alto Paranaíba');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3106', 'Central Mineira');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3107', 'Metropolitana de Belo Horizonte');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3108', 'Vale do Rio Doce');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3109', 'Oeste de Minas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3110', 'Sul/Sudoeste de Minas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3111', 'Campo das Vertentes');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3112', 'Zona da Mata');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3201', 'Noroeste Espírito-santense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3202', 'Litoral Norte Espírito-santense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3203', 'Central Espírito-santense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3204', 'Sul Espírito-santense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3301', 'Noroeste Fluminense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3302', 'Norte Fluminense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3303', 'Centro Fluminense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3304', 'Baixadas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3305', 'Sul Fluminense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3306', 'Metropolitana do Rio de Janeiro');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3501', 'São José do Rio Preto');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3502', 'Ribeirão Preto');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3503', 'Araçatuba');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3504', 'Bauru');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3505', 'Araraquara');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3506', 'Piracicaba');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3507', 'Campinas');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3508', 'Presidente Prudente');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3509', 'Marília');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3510', 'Assis');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3511', 'Itapetininga');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3512', 'Macro Metropolitana Paulista');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3513', 'Vale do Paraíba Paulista');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3514', 'Litoral Sul Paulista');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('3515', 'Metropolitana de São Paulo');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4101', 'Noroeste Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4102', 'Centro Ocidental Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4103', 'Norte Central Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4104', 'Norte Pioneiro Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4105', 'Centro Oriental Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4106', 'Oeste Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4107', 'Sudoeste Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4108', 'Centro-Sul Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4109', 'Sudeste Paranaense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4110', 'Metropolitana de Curitiba');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4201', 'Oeste Catarinense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4202', 'Norte Catarinense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4203', 'Serrana');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4204', 'Vale do Itajaí');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4205', 'Grande Florianópolis');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4206', 'Sul Catarinense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4301', 'Noroeste Rio-grandense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4302', 'Nordeste Rio-grandense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4303', 'Centro Ocidental Rio-grandense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4304', 'Centro Oriental Rio-grandense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4305', 'Metropolitana de Porto Alegre');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4306', 'Sudoeste Rio-grandense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('4307', 'Sudeste Rio-grandense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5001', 'Pantanais Sul Mato-grossense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5002', 'Centro Norte de Mato Grosso do Sul');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5003', 'Leste de Mato Grosso do Sul');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5004', 'Sudoeste de Mato Grosso do Sul');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5101', 'Norte Mato-grossense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5102', 'Nordeste Mato-grossense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5103', 'Sudoeste Mato-grossense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5104', 'Centro-Sul Mato-grossense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5105', 'Sudeste Mato-grossense');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5201', 'Noroeste Goiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5202', 'Norte Goiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5203', 'Centro Goiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5204', 'Leste Goiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5205', 'Sul Goiano');
-INSERT INTO Agentes.dbo.MesoRegiao (idMeso, descricao) VALUES('5301', 'Distrito Federal');
+﻿INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('1101','Madeira-Guaporé')
+,('1102','Leste Rondoniense')
+,('1201','Vale do Juruá')
+,('1202','Vale do Acre')
+,('1301','Norte Amazonense')
+,('1302','Sudoeste Amazonense')
+,('1303','Centro Amazonense')
+,('1304','Sul Amazonense')
+,('1401','Norte de Roraima')
+,('1402','Sul de Roraima')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('1501','Baixo Amazonas')
+,('1502','Marajó')
+,('1503','Metropolitana de Belém')
+,('1504','Nordeste Paraense')
+,('1505','Sudoeste Paraense')
+,('1506','Sudeste Paraense')
+,('1601','Norte do Amapá')
+,('1602','Sul do Amapá')
+,('1701','Ocidental do Tocantins')
+,('1702','Oriental do Tocantins')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('2101','Norte Maranhense')
+,('2102','Oeste Maranhense')
+,('2103','Centro Maranhense')
+,('2104','Leste Maranhense')
+,('2105','Sul Maranhense')
+,('2201','Norte Piauiense')
+,('2202','Centro-Norte Piauiense')
+,('2203','Sudoeste Piauiense')
+,('2204','Sudeste Piauiense')
+,('2301','Noroeste Cearense')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('2302','Norte Cearense')
+,('2303','Metropolitana de Fortaleza')
+,('2304','Sertões Cearenses')
+,('2305','Jaguaribe')
+,('2306','Centro-Sul Cearense')
+,('2307','Sul Cearense')
+,('2401','Oeste Potiguar')
+,('2402','Central Potiguar')
+,('2403','Agreste Potiguar')
+,('2404','Leste Potiguar')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('2501','Sertão Paraibano')
+,('2502','Borborema')
+,('2503','Agreste Paraibano')
+,('2504','Mata Paraibana')
+,('2601','Sertão Pernambucano')
+,('2602','São Francisco Pernambucano')
+,('2603','Agreste Pernambucano')
+,('2604','Mata Pernambucana')
+,('2605','Metropolitana de Recife')
+,('2701','Sertão Alagoano')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('2702','Agreste Alagoano')
+,('2703','Leste Alagoano')
+,('2801','Sertão Sergipano')
+,('2802','Agreste Sergipano')
+,('2803','Leste Sergipano')
+,('2901','Extremo Oeste Baiano')
+,('2902','Vale São-Franciscano da Bahia')
+,('2903','Centro Norte Baiano')
+,('2904','Nordeste Baiano')
+,('2905','Metropolitana de Salvador')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('2906','Centro Sul Baiano')
+,('2907','Sul Baiano')
+,('3101','Noroeste de Minas')
+,('3102','Norte de Minas')
+,('3103','Jequitinhonha')
+,('3104','Vale do Mucuri')
+,('3105','Triângulo Mineiro/Alto Paranaíba')
+,('3106','Central Mineira')
+,('3107','Metropolitana de Belo Horizonte')
+,('3108','Vale do Rio Doce')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('3109','Oeste de Minas')
+,('3110','Sul/Sudoeste de Minas')
+,('3111','Campo das Vertentes')
+,('3112','Zona da Mata')
+,('3201','Noroeste Espírito-santense')
+,('3202','Litoral Norte Espírito-santense')
+,('3203','Central Espírito-santense')
+,('3204','Sul Espírito-santense')
+,('3301','Noroeste Fluminense')
+,('3302','Norte Fluminense')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('3303','Centro Fluminense')
+,('3304','Baixadas')
+,('3305','Sul Fluminense')
+,('3306','Metropolitana do Rio de Janeiro')
+,('3501','São José do Rio Preto')
+,('3502','Ribeirão Preto')
+,('3503','Araçatuba')
+,('3504','Bauru')
+,('3505','Araraquara')
+,('3506','Piracicaba')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('3507','Campinas')
+,('3508','Presidente Prudente')
+,('3509','Marília')
+,('3510','Assis')
+,('3511','Itapetininga')
+,('3512','Macro Metropolitana Paulista')
+,('3513','Vale do Paraíba Paulista')
+,('3514','Litoral Sul Paulista')
+,('3515','Metropolitana de São Paulo')
+,('4101','Noroeste Paranaense')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('4102','Centro Ocidental Paranaense')
+,('4103','Norte Central Paranaense')
+,('4104','Norte Pioneiro Paranaense')
+,('4105','Centro Oriental Paranaense')
+,('4106','Oeste Paranaense')
+,('4107','Sudoeste Paranaense')
+,('4108','Centro-Sul Paranaense')
+,('4109','Sudeste Paranaense')
+,('4110','Metropolitana de Curitiba')
+,('4201','Oeste Catarinense')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('4202','Norte Catarinense')
+,('4203','Serrana')
+,('4204','Vale do Itajaí')
+,('4205','Grande Florianópolis')
+,('4206','Sul Catarinense')
+,('4301','Noroeste Rio-grandense')
+,('4302','Nordeste Rio-grandense')
+,('4303','Centro Ocidental Rio-grandense')
+,('4304','Centro Oriental Rio-grandense')
+,('4305','Metropolitana de Porto Alegre')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('4306','Sudoeste Rio-grandense')
+,('4307','Sudeste Rio-grandense')
+,('5001','Pantanais Sul Mato-grossense')
+,('5002','Centro Norte de Mato Grosso do Sul')
+,('5003','Leste de Mato Grosso do Sul')
+,('5004','Sudoeste de Mato Grosso do Sul')
+,('5101','Norte Mato-grossense')
+,('5102','Nordeste Mato-grossense')
+,('5103','Sudoeste Mato-grossense')
+,('5104','Centro-Sul Mato-grossense')
+;
+INSERT INTO Agentes.dbo.MesoRegiao (idMeso,descricao) VALUES
+('5105','Sudeste Mato-grossense')
+,('5201','Noroeste Goiano')
+,('5202','Norte Goiano')
+,('5203','Centro Goiano')
+,('5204','Leste Goiano')
+,('5205','Sul Goiano')
+,('5301','Distrito Federal')
+;
