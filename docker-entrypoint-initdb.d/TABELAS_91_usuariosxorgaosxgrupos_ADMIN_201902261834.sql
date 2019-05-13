@@ -114,3 +114,17 @@ INSERT INTO Tabelas.dbo.usuariosxorgaosxgrupos (uog_usuario,uog_orgao,uog_grupo,
 ,(236,166,125,1)
 ,(236,303,126,1)
 ;
+
+-- Agente 
+--SET IDENTITY_INSERT Agentes.dbo.Agentes ON
+INSERT INTO Agentes.dbo.Agentes (CNPJCPF, CNPJCPFSuperior, TipoPessoa, DtCadastro, DtAtualizacao, DtValidade, Status, Usuario) VALUES('23969156149', '00000000000000', 0, '2009-01-24 10:31:33.910', '2011-10-25 11:39:11.710', '2012-10-24 11:39:11.710', 0, 5316);
+--SET IDENTITY_INSERT Agentes.dbo.Agentes OFF
+
+-- Técnicos de admissibilidade SAV E SEFIC(no dump de produçao o usuario 246 nao possui esses perfis)
+INSERT INTO Tabelas.dbo.UsuariosXOrgaosXGrupos (uog_usuario, uog_orgao, uog_grupo, uog_status) VALUES(236, 262, 92, 1);
+INSERT INTO Tabelas.dbo.UsuariosXOrgaosXGrupos (uog_usuario, uog_orgao, uog_grupo, uog_status) VALUES(236, 166, 92, 1);
+
+-- Componente da comissao CNIC
+-- no enquadramento o codigo area do projeto deve ser o mesmo do componente da comissao 
+INSERT INTO Tabelas.dbo.UsuariosXOrgaosXGrupos (uog_usuario, uog_orgao, uog_grupo, uog_status) VALUES(236, 400, 118, 1);
+INSERT INTO Agentes.dbo.tbTitulacaoConselheiro (idAgente, cdArea, cdSegmento, stTitular, stConselheiro) VALUES(1, '5', '0', 1, 'A');
