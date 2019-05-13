@@ -16,7 +16,8 @@ services:
       - "1433:1433"
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: "salic@123456"     
+      SA_PASSWORD: "salic@123456" 
+      MSSQL_PID: "Developer"    
  
 # volumes: # for mac
   # docker-data: 
