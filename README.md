@@ -1,6 +1,14 @@
 # docker-salic-mssql
 Docker para rodar o banco do Salic para desenvolvimento(SQL Server) e ferramenta de importação de dados.
 
+Este projeto possui duas vertentes, são elas:
+  - Uma estrutura básica do salic, com todas as tabelas de apoio e um usuário administrador com todos os perfis do sistema.
+  - Uma ferramenta de migração em python, que faz cópia de informações de um banco de origem para um banco destino. 
+
+## Usuário padrão
+  - cpf: 012.345.678-90
+  - senha: 123456
+
 ## MacOS
 Atualmente existe alguns problemas para compartilhamento de volume e mapeamentos de portas nessa imagem para o MacOS o comando abaixo resolve.
 ```
@@ -9,7 +17,7 @@ docker-compose run --rm --service-ports salic-mssql
 ## Linux
 Ajustar o docke-compose.yml para linux
 
-Fazer o build para gerar as tabelas
+Fazer o build para gerar as tabelas com dados iniciais
 ```
 docker-compose up --build
 ```
