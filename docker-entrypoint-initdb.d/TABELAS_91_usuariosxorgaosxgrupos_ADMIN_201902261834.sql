@@ -114,19 +114,3 @@ INSERT INTO Tabelas.dbo.usuariosxorgaosxgrupos (uog_usuario,uog_orgao,uog_grupo,
 ,(236,166,125,1)
 ,(236,303,126,1)
 ;
-
--- Agente Proponente
-INSERT INTO Agentes.dbo.Agentes (CNPJCPF, CNPJCPFSuperior, TipoPessoa, DtCadastro, DtAtualizacao, DtValidade, Status, Usuario) VALUES('23969156149', '00000000000000', 0, '2009-01-24 10:31:33.910', '2011-10-25 11:39:11.710', '2012-10-24 11:39:11.710', 0, 236);
-INSERT INTO Agentes.dbo.Nomes (idAgente, TipoNome, Descricao, Status, Usuario) VALUES(1, 18, 'Administrador do Sistema', 0, 236);
-INSERT INTO Agentes.dbo.EnderecoNacional (idAgente, TipoEndereco, TipoLogradouro, Logradouro, Numero, Bairro, Complemento, Cidade, UF, Cep, Municipio, UfDescricao, Status, Divulgar, Usuario) VALUES(1, 23, 44, 'QR 404 Conjunto 19', '14', 'Samambaia Norte (Samambaia)', '', '530010', 53, '72318121', NULL, NULL, 0, 0, 236);
-INSERT INTO Agentes.dbo.Telefones (idAgente, TipoTelefone, UF, DDD, Numero, Divulgar, Usuario) VALUES(1, 25, 53, 61, '2024-2169', 0, 236);
-INSERT INTO Agentes.dbo.Internet (idAgente, TipoInternet, Descricao, Status, Divulgar, Usuario) VALUES(1, 28, 'salicweb@gmail.com', 1, 0, 236);
-
--- Técnicos de admissibilidade SAV E SEFIC(no dump de produçao o usuario 246 nao possui esses perfis)
-INSERT INTO Tabelas.dbo.UsuariosXOrgaosXGrupos (uog_usuario, uog_orgao, uog_grupo, uog_status) VALUES(236, 262, 92, 1);
-INSERT INTO Tabelas.dbo.UsuariosXOrgaosXGrupos (uog_usuario, uog_orgao, uog_grupo, uog_status) VALUES(236, 166, 92, 1);
-
--- Componente da comissao CNIC
--- no enquadramento o codigo area do projeto deve ser o mesmo do componente da comissao 
-INSERT INTO Tabelas.dbo.UsuariosXOrgaosXGrupos (uog_usuario, uog_orgao, uog_grupo, uog_status) VALUES(236, 400, 118, 1);
-INSERT INTO Agentes.dbo.tbTitulacaoConselheiro (idAgente, cdArea, cdSegmento, stTitular, stConselheiro) VALUES(1, '5', '0', 1, 'A');
