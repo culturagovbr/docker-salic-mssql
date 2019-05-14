@@ -5,10 +5,6 @@ Este projeto possui duas vertentes, são elas:
   - Uma estrutura básica do salic, com todas as tabelas de apoio e um usuário administrador com todos os perfis do sistema.
   - Uma ferramenta de migração em python, que faz cópia de informações de um banco de origem para um banco destino. 
 
-## Usuário padrão
-  - cpf: 012.345.678-90
-  - senha: 123456
-
 ## MacOS
 Atualmente existe alguns problemas para compartilhamento de volume e mapeamentos de portas nessa imagem para o MacOS o comando abaixo resolve.
 ```
