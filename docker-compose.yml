@@ -3,15 +3,11 @@ version: '3.0'
 services:
   salic-mssql:
     build: .
-    image: culturagovbr/salic-mssql:1.0.0
+    image: culturagovbr/salic-mssql:1.1.0
     container_name: salic-mssql
-    # volumes: 
+    volumes: 
       # - docker-data:/var/opt/mssql # for mac
-      # - ./docker-data:/var/opt/mssql # for linux
-      # - ./schemas:/tmp/schemas
-      # - ./initial-data.sql:/tmp/initial-data.sql 
-    # working_dir: /tmp
-    # command: sh -c ' chmod +x ./entrypoint.sh; ./entrypoint.sh & /opt/mssql/bin/sqlservr;' 
+      - ./docker-data:/var/opt/mssql # for linux
     ports:
       - "1433:1433"
     environment:
