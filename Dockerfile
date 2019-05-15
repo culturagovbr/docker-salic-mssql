@@ -10,21 +10,10 @@ EXPOSE 1433
 COPY docker-entrypoint.sh /usr/local/bin/
 COPY docker-entrypoint-initdb.sh /usr/local/bin/
 
-# RUN apt update && apt install -y \
-# python3-pip \
-# unixodbc-dev
-
-# RUN pip3 install --upgrade pip
-# RUN pip install pyodbc sqlalchemy
-
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh 
-RUN chmod +x /usr/local/bin/docker-entrypoint-initdb.sh
-
-COPY schemas /tmp/schemas
-COPY migrate /tmp/migrate
-COPY backup /tmp/backup
+COPY . /tmp/
 COPY docker-entrypoint-initdb.d /tmp/docker-entrypoint-initdb.d
-RUN chmod +x /tmp/migrate/main.py
+
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh && chmod +x /usr/local/bin/docker-entrypoint-initdb.sh && chmod +x /tmp/migrate/main.py
 
 WORKDIR "/tmp/"
 

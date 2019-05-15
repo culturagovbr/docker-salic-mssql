@@ -3,11 +3,11 @@ version: '3.0'
 services:
   salic-mssql:
     build: .
-    image: mcr.microsoft.com/mssql/server:latest
+    image: culturagovbr/salic-mssql:1.0.0
     container_name: salic-mssql
-    volumes: 
+    # volumes: 
       # - docker-data:/var/opt/mssql # for mac
-      - ./docker-data:/var/opt/mssql # for linux
+      # - ./docker-data:/var/opt/mssql # for linux
       # - ./schemas:/tmp/schemas
       # - ./initial-data.sql:/tmp/initial-data.sql 
     # working_dir: /tmp
@@ -15,9 +15,14 @@ services:
     ports:
       - "1433:1433"
     environment:
-      ACCEPT_EULA: "Y"
-      SA_PASSWORD: "salic@123456" 
-      MSSQL_PID: "Developer"    
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=salic@123456
+      - MSSQL_PID=Developer
+      - RESTAURAR_BACKUP=true
+      - GERAR_ESTRUTURA_E_DADOS=false
+      - MIGRAR_DADOS_COM_PYTHON=false
  
 # volumes: # for mac
   # docker-data: 
+
+    
