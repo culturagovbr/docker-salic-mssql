@@ -1,0 +1,2 @@
+agentes|INNER JOIN sac.dbo.PreProjeto as preprojeto ON agentes.idAgente = preprojeto.idAgente INNER JOIN sac.dbo.projetos as projetos ON projetos.idProjeto = preprojeto.idPreProjeto and projetos.anoprojeto = '18'|idAgente
+nomes|INNER JOIN sac.dbo.PreProjeto as preprojeto ON nomes.idAgente = preprojeto.idAgente INNER JOIN sac.dbo.projetos as projetos ON projetos.idProjeto = preprojeto.idPreProjeto and projetos.anoprojeto = '18'|idNome
