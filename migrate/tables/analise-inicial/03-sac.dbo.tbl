@@ -1,1 +1,4 @@
 tbDistribuirParecer|INNER JOIN sac.dbo.projetos as projetos ON projetos.idpronac = tbDistribuirParecer.idpronac AND projetos.AnoProjeto='18'|idDistribuirParecer
+tbAnaliseDeConteudo|INNER JOIN sac.dbo.projetos as projetos ON projetos.idpronac = tbAnaliseDeConteudo.idpronac AND projetos.AnoProjeto='18'|idAnaliseDeConteudo
+tbAvaliarAdequacaoProjeto|INNER JOIN sac.dbo.projetos as projetos ON projetos.idpronac = tbAvaliarAdequacaoProjeto.idpronac AND projetos.AnoProjeto='18'|idAvaliarAdequacaoProjeto
+parecer|INNER JOIN sac.dbo.projetos as projetos ON projetos.idpronac = parecer.idpronac AND projetos.AnoProjeto='18'|IdParecer

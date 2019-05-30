@@ -1,0 +1,1 @@
+ALTER TABLE sac.dbo.tbDistribuirParecer ADD idOrgaoOrigem int
